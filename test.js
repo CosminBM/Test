@@ -43,7 +43,7 @@
 
 console.log(min(0, 10));
 // → 0
-console.log(min(0, -10));
+console.log(min(0, -10)); //Test
 // → -10
 
 //3.2 Recursion
