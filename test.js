@@ -1,14 +1,12 @@
 //https://eloquentjavascript.net/code#2
 //
 //
-//2.1 Looping a triangle
+//2.1 Looping a triangle - completed
 //
 //for (let n = "#"; n.length < 8; n+= "#")
 //    console.log(n);
-//
-//
-//2.2 FizzBuzz - complete
 
+//2.2 FizzBuzz - completed
 //for (let n = 1; n <= 100; n = n + 1){
 //    if ((n % 3 == 0) && (n % 5 == 0) ){
 //       console.log("FizzBuzz");
@@ -20,9 +18,9 @@
 //        console.log(n);
 //    }  
 //}
-//
-//
-//2.3 Chess Board 
+
+
+//2.3 Chess Board - completed
 //let size = 10;
 //let grid = "";
 //
@@ -39,19 +37,24 @@
 //console.log(grid);
 
 
-//3.1 Minimum
-
-console.log(min(0, 10));
+//3.1 Minimum - complete
+//
+//function min(a, b){
+// if(a < b) return a;
+//    else return b;  
+//}
+//    
+//console.log(min(0, 10));
 // → 0
-console.log(min(0, -10)); //Test
+//console.log(min(0, -10));
 // → -10
 
 //3.2 Recursion
-//
+
 //3.3 Bean counting
-//
+
 //4.1The sum of a range.
-//
+
 ////In progress
 //function range () {
 //    let array = [];
@@ -62,7 +65,6 @@ console.log(min(0, -10)); //Test
 //    
 //    return array.reduce(); 
 //}
-//
 //console.log(range(1, 10));
 //// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //
