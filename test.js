@@ -37,7 +37,7 @@
 //console.log(grid);
 
 
-//3.1 Minimum - complete
+//3.1 Minimum - completed
 //
 //function min(a, b){
 // if(a < b) return a;
@@ -45,11 +45,29 @@
 //}
 //    
 //console.log(min(0, 10));
-// → 0
+//// → 0
 //console.log(min(0, -10));
-// → -10
+//// → -10
 
-//3.2 Recursion
+//3.2 Recursion - completed
+//function isEven(number) {
+//   function find(current, history) {
+//    if (current == number) {
+//      return history;
+//    } else if ( number > current) {
+//      return "false";
+//    } else (number < current)
+//      return "??";
+//  }
+//  return find(50,"true");
+//}
+//console.log(isEven(50));
+//// → true
+//console.log(isEven(75));
+//// → false
+//console.log(isEven(-1));
+//// → ??
+
 
 //3.3 Bean counting
 
