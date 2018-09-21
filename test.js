@@ -49,24 +49,22 @@
 //console.log(min(0, -10));
 //// → -10
 
-//3.2 Recursion - completed
-//function isEven(number) {
-//   function find(current, history) {
-//    if (current == number) {
-//      return history;
-//    } else if ( number > current) {
-//      return "false";
-//    } else (number < current)
-//      return "??";
-//  }
-//  return find(50,"true");
+//3.2 Recursion - Not
+//function isEven(n) {
+//    if (n == 0)
+//      return true;
+//   else if (n == 1)
+//      return false;
+//   else if (n < 0)
+//      return isEven(-n);
+//   else return isEven(n - 2);
 //}
 //console.log(isEven(50));
 //// → true
 //console.log(isEven(75));
 //// → false
 //console.log(isEven(-1));
-//// → ??
+//// → false
 
 
 //3.3 Bean counting
