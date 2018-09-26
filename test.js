@@ -69,8 +69,8 @@
 
 ////3.3 Bean counting
 function countBs(str){
-asd
-      
+
+  
 }
 console.log(countBs("BBC"));
 // → 2
