@@ -68,10 +68,11 @@
 
 
 ////3.3 Bean counting
-//function countBs(str){
-//
-//}
-//console.log(countBs("BBC"));
+function countBs(str){
+
+      
+}
+console.log(countBs("BBC"));
 // → 2
 //console.log(countChar("kakkerlak", "k"));
 // → 4
