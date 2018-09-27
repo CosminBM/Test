@@ -127,7 +127,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 */
 
 // My solution
-/*
+
 var higher, BMI, John, Mark;
 
 massJohn = 80; // kg
@@ -136,14 +136,14 @@ heightJohn = 1.86; //kg
 heightMark = 1.82; // meters
 
 BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log('John\'s BMI is' + ' ' + BMIJohn);
+console.log('John\'s BMI is ' + BMIJohn);
 
 BMIMark = massMark / (heightMark * heightMark);
-console.log('Marks\'s BMI is' + ' ' + BMIMark);  
+console.log('Marks\'s BMI is ' + BMIMark);  
 
 higher = BMIJohn < BMIMark || BMIJohn > BMIMark;
-console.log('Is Mark\'s BMI higher than John\'s?' + ' ' + higher);
-*/
+console.log('Is Mark\'s BMI higher than John\'s? ' + higher);
+
 
 //Jona's solution
 /*
@@ -159,6 +159,10 @@ console.log(BMIMark, BMIJohn);
 
 var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
+*/
+
+/*******************
+If / else statements
 */
 
 
