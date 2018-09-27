@@ -141,7 +141,7 @@ console.log('John\'s BMI is ' + BMIJohn);
 BMIMark = massMark / (heightMark * heightMark);
 console.log('Marks\'s BMI is ' + BMIMark);  
 
-higher = BMIJohn < BMIMark || BMIJohn > BMIMark;
+higher = BMIJohn < BMIMark;
 console.log('Is Mark\'s BMI higher than John\'s? ' + higher);
 */
 
