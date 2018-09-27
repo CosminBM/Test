@@ -69,15 +69,12 @@
 
 ////3.3 Bean counting
 function countBs(string) {
-    let count;
-        for (count = 0; count <= string.length; count++){
-            if (string == "B"){
-              return count += 1;
-            }
-
+    let count = 0;
+        for (count = 0; count <= string.length; count++) {
+            return ;
         }
-    
 }
+
 console.log(countBs("BBC"));
 // → 2
 //console.log(countChar("kakkerlak", "k"));
