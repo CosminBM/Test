@@ -324,7 +324,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 // My solution
 
 var gameJohn = (103 + 87 + 103) / 3;
-var gameMike = (103 + 89 + 106) / 3
+var gameMike = (103 + 89 + 106) / 3;
 var gameMary = (103 + 103 + 106) / 3;
 
 console.log('The average number of the latest 3 games for John\'s team is ' + gameJohn);
