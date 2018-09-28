@@ -70,13 +70,13 @@
 ////3.3 Bean counting
 function countBs(string) {
     let count;
-        for (count = 0; count <= string.length; count++){
-            if (string == "B"){
-              return count += 1;
-            }
-
-        }
-    
+        for (count = 0; count < string.length; count++){
+             if (string.length == "B"){
+                 return string;
+                }
+            } 
+    return count;
+       
 }
 console.log(countBs("BBC"));
 // → 2
