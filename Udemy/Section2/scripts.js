@@ -245,9 +245,10 @@ if (age >= 18) {
 } else {
     var drink = 'juice';
 }
-
+*/
 
 // Switch statement
+/*
 var job = 'instructor';
 switch (job) {
     case 'teacher':
@@ -322,7 +323,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 */
 
 // My solution
-
+/*
 var gameJohn = (103 + 87 + 103) / 3;
 var gameMike = (103 + 89 + 106) / 3;
 var gameMary = (103 + 103 + 106) / 3;
@@ -340,10 +341,10 @@ if (gameJohn > gameMike &&  gameJohn > gameMary) {
 } else {
     console.log('The team\'s are equal with: '  + gameMike || + gameJohn || + gameMary + ' points' );
 }
-
+*/
     
 //Jona's solution
-
+/*
 var scoreJohn = (189 + 120 + 103) / 3;
 var scoreMike = (129 + 94 + 123) / 3;
 var scoreMary = (97 + 134 + 105) / 3;
@@ -367,7 +368,7 @@ if (scoreJohn > scoreMike) {
 } else {
     console.log('There is a draw');
 }
-
+*/
 
 
 
