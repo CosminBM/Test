@@ -49,12 +49,13 @@ alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + is
 
 var lastName = prompt(' What is his last Name? ');
 console.log(firstName + ' ' + lastName);
-
 */
+
 
 /*******************
 Basic operators
 */
+
 /*
 var year, yearJohn, yearMark;
 now = 2018;
@@ -86,6 +87,7 @@ console.log(typeof x);
 /*******************
 Operator precedence
 */
+
 /*
 var now = 2018;
 var yearJohn = 1989;
@@ -202,12 +204,12 @@ if (BMIMark > BMIJohn){
 } else {
     console.log('John\'s BMI is higher than Mark\'s.');
 }
-
 */
 
 /*******************
 Boolean logic
 */
+
 /*
 var firstName = 'John';
 var age = 20;
@@ -227,6 +229,7 @@ if (age < 13) {
 The ternary Operator and Switch Statements
 */
 
+/*
 var firstName = 'John';
 var age = 22;
 
@@ -237,15 +240,14 @@ var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
 
-//if (age >= 18) {
-//    var drink = 'beer';
-//} else {
-//    var drink = 'juice';
-//}
+if (age >= 18) {
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
 
 
 // Switch statement
-
 var job = 'instructor';
 switch (job) {
     case 'teacher':
@@ -276,17 +278,70 @@ switch (true){
     default:
     console.log(firstName + ' is a men.');     
 }
+*/
+
+/*******************
+Truthy and Falsy values and equality operators
+*/
+
+// falsy values: undefined, null, 0, '', NaN - value considered fals when evaluated in if/else statement conditions
+// truthy values: NOT falsy values
+/*
+var height;
+
+height = 23;
+
+if (height || height === 0) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
+
+//Equality operators
+
+if (height === '23') {
+    console.log('The == operator does type coercion!');
+}
+*/
 
 
+/*****************************
+* CODING CHALLENGE 2
+*/
 
+/*
+John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
 
+1. Calculate the average score for each team
+2. Decide which teams wins in average (highest average score), and print the winner to the console. Also include the average score in the output.
+3. Then change the scores to show different winners. Don't forget to take into account there might be a draw (the same average score)
 
+4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console. HINT: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)
+5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
 
+*/
 
+// My solution
 
+var gameJohn = (103 + 87 + 103) / 3;
+var gameMike = (103 + 89 + 106) / 3
+var gameMary = (103 + 103 + 106) / 3;
 
+console.log('The average number of the latest 3 games for John\'s team is ' + gameJohn);
+console.log('The average number of the latest 3 games for Mikes\'s team is ' + gameMike);
+console.log('The average number of the latest 3 games for Mary\'s team is ' + gameMary);
 
+if (gameJohn > gameMike &&  gameJohn > gameMary) {
+    console.log('The average winner is John\'s team with: ' + gameJohn + ' points');
+} else if (gameMike > gameJohn &&  gameMike >  gameMary) {
+    console.log('The average winner is Mike\'s team with: ' + gameMike +' points');
+} else if (gameMary > gameMike && gameMary > gameJohn) {
+    console.log('The average winner is Mary\'s team with: ' + gameMary + ' points');
+} else {
+    console.log('The team\'s are equal with: '  + gameMike || + gameJohn || + gameMary + ' points' );
+}
 
+    
 
 
 
