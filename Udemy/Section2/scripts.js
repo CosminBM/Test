@@ -498,10 +498,7 @@ function calculator(allTips) {
     } else {
         return allTips * tipMore;
     }
-    
 }
-
-
 
 
 
