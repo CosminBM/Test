@@ -485,16 +485,43 @@ GOOD LUCK 😀
 
 //My solution
 
+var tipLess = 20/100;
+var tipBetween = 15/100;
+var tipMore = 10/100;
+var bills = [48, 124, 268];
+
+function calculator(allTips) {
+    if (allTips < 50) {
+        return allTips * tipLess; 
+    } else if (allTips >= 50 && allTips <= 200) {
+        return allTips * tipBetween;
+    } else {
+        return allTips * tipMore;
+    }
+    
+}
+
+function 
 
 
 
 
-
-
-
-
-
-
+//
+//var job = 'instructor';
+//switch (job) {
+//    case 'teacher':
+//    case 'instructor':
+//        console.log(firstName + ' teaches kids how to code.');
+//        break;
+//    case 'driver':
+//        console.log(firstName + ' drives an uber in Rome.');
+//        break;
+//    case 'designer':
+//        console.log(firstName + ' designs beautiful websites.');
+//        break;
+//    default:
+//        console.log(firstName + ' does something else.');
+//}
 
 
 
