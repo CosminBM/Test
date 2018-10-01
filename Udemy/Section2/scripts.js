@@ -485,21 +485,22 @@ GOOD LUCK 😀
 
 //My solution
 
-var tipLess = 20/100;
-var tipBetween = 15/100;
-var tipMore = 10/100;
 var bills = [48, 124, 268];
 
-function calculator(allTips) {
+function calculator(allTips) { 
     if (allTips < 50) {
-        return allTips * tipLess; 
+        return allTips * 20/100; 
     } else if (allTips >= 50 && allTips <= 200) {
-        return allTips * tipBetween;
+        return allTips * 15/100;
     } else {
-        return allTips * tipMore;
+        return allTips * 10/100;
     }
+    
 }
 
+
+var eachBill = calculator(bills.shift(0));
+console.log();
 
 
 
