@@ -484,7 +484,7 @@ GOOD LUCK 😀
 */
 
 //My solution
-
+/*
 var bills = [48, 124, 268];
 
 function calculator(allTips) { 
@@ -498,10 +498,6 @@ function calculator(allTips) {
 
 }
 
-//1 index
-//console.log(new Array ('All the three tips are: ' + calculator(bills[0]) + ', ' + calculator(bills[1]) + ', ' + calculator(bills[2])));
-//console.log(new Array ('All the thee bills + tips are: ' + (calculator(bills[0]) + bills[0]) + ', ' + (calculator(bills[1]) + bills[1]) + ', ' + (calculator(bills[2]) + bills[2])));
-//3 indexes
 console.log(new Array (calculator(bills[0]), calculator(bills[1]), calculator(bills[2])));
 console.log(new Array ((calculator(bills[0]) + bills[0]), (calculator(bills[1]) + bills[1]), (calculator(bills[2]) + bills[2])));
 
@@ -529,7 +525,7 @@ var finalValues = [bills[0] + tips[0],
                    bills[2] + tips[2]];
 
 console.log(tips, finalValues);
-
+*/
 
 
 
