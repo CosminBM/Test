@@ -2,7 +2,7 @@
 Variables and data types
 */
 
-/*
+
 var firstName = 'John';
 console.log(firstName);
 
@@ -22,13 +22,13 @@ console.log(job);
 var _4years = 5;
 var hahaHH = 'And So';
 var if = 23;
-*/
+
 
 /*******************
 Variable mutation and type coercion
 */
 
-/*
+
 var firstName = 'John';
 var age = 29;
 // Type coercion
@@ -49,14 +49,14 @@ alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + is
 
 var lastName = prompt(' What is his last Name? ');
 console.log(firstName + ' ' + lastName);
-*/
+
 
 
 /*******************
 Basic operators
 */
 
-/*
+
 var year, yearJohn, yearMark;
 now = 2018;
 ageJohn = 28;
@@ -82,13 +82,13 @@ console.log(typeof ageJohn);
 console.log(typeof 'Mark is older than John');
 var x;
 console.log(typeof x);
-*/
+
 
 /*******************
 Operator precedence
 */
 
-/*
+
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -113,7 +113,7 @@ x *= 2;
 console.log(x);
 x += 10;
 console.log(x);
-*/
+
 
 
 /*******************
@@ -129,7 +129,6 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 */
 
 // My solution
-/*
 var higher, BMI, John, Mark;
 
 massJohn = 80; // kg
@@ -145,10 +144,9 @@ console.log('Marks\'s BMI is ' + BMIMark);
 
 higher = BMIJohn < BMIMark;
 console.log('Is Mark\'s BMI higher than John\'s? ' + higher);
-*/
+
 
 //Jona's solution
-/*
 var massMark = 78; // kg
 var heightMark = 1.69; // meters
 
@@ -161,13 +159,13 @@ console.log(BMIMark, BMIJohn);
 
 var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
-*/
+
 
 /*******************
 If / else statements
 */
 
-/*
+
 var firstName = 'John';
 var civilStatus = 'single';
 
@@ -204,13 +202,13 @@ if (BMIMark > BMIJohn){
 } else {
     console.log('John\'s BMI is higher than Mark\'s.');
 }
-*/
+
 
 /*******************
 Boolean logic
 */
 
-/*
+
 var firstName = 'John';
 var age = 20;
 
@@ -223,13 +221,13 @@ if (age < 13) {
 } else {
     console.log(firstName + ' is a men.');
 }
-*/
+
 
 /*******************
 The ternary Operator and Switch Statements
 */
 
-/*
+
 var firstName = 'John';
 var age = 22;
 
@@ -245,10 +243,10 @@ if (age >= 18) {
 } else {
     var drink = 'juice';
 }
-*/
+
 
 // Switch statement
-/*
+
 var job = 'instructor';
 switch (job) {
     case 'teacher':
@@ -279,7 +277,7 @@ switch (true){
     default:
     console.log(firstName + ' is a men.');     
 }
-*/
+
 
 /*******************
 Truthy and Falsy values and equality operators
@@ -287,7 +285,7 @@ Truthy and Falsy values and equality operators
 
 // falsy values: undefined, null, 0, '', NaN - value considered fals when evaluated in if/else statement conditions
 // truthy values: NOT falsy values
-/*
+
 var height;
 
 height = 23;
@@ -303,7 +301,7 @@ if (height || height === 0) {
 if (height === '23') {
     console.log('The == operator does type coercion!');
 }
-*/
+
 
 
 /*****************************
@@ -323,7 +321,6 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 */
 
 // My solution
-/*
 var gameJohn = (103 + 87 + 103) / 3;
 var gameMike = (103 + 89 + 106) / 3;
 var gameMary = (103 + 103 + 106) / 3;
@@ -341,10 +338,9 @@ if (gameJohn > gameMike &&  gameJohn > gameMary) {
 } else {
     console.log('The team\'s are equal with: '  + gameMike || + gameJohn || + gameMary + ' points' );
 }
-*/
+
     
 //Jona's solution
-/*
 var scoreJohn = (189 + 120 + 103) / 3;
 var scoreMike = (129 + 94 + 123) / 3;
 var scoreMary = (97 + 134 + 105) / 3;
@@ -368,13 +364,13 @@ if (scoreJohn > scoreMike) {
 } else {
     console.log('There is a draw');
 }
-*/
+
 
 /*****************************
 * Functions
 */
 
-/*
+
 function calculateAge(birthYear) {
     return 2018 - birthYear;
 }
@@ -400,7 +396,7 @@ function yearsUntilRetirement(year, firstName) {
 yearsUntilRetirement(1990, 'John');
 yearsUntilRetirement(1948, 'Mike');
 yearsUntilRetirement(1969, 'Jane');
-*/
+
 
 /*****************************
 * Functions Statements and Expressions
@@ -410,7 +406,7 @@ yearsUntilRetirement(1969, 'Jane');
 //function whatDoYouDo(job, firstName) {}
     
 // Function expression
-/*
+
 var whatDoYouDo = function(job, firstName) {
     switch(job) {
         case 'teacher':
@@ -428,13 +424,13 @@ console.log(whatDoYouDo('teacher', 'John'));
 console.log(whatDoYouDo('designer', 'Jane'));
 console.log(whatDoYouDo('drive', 'Jake'));
 console.log(whatDoYouDo('retired', 'Joel'));
-*/
+
 
 
 /*****************************
 * Arrays
 */
-/*
+
 // Initialize new array
 var names = ['John', 'Mark', 'Jane'];
 var years = new Array(1990, 1969, 1948);
@@ -463,7 +459,7 @@ console.log(john.indexOf(23));
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
 console.log(isDesigner);
-*/
+
 
 /*****************************
 * CODING CHALLENGE 3
@@ -484,7 +480,6 @@ GOOD LUCK 😀
 */
 
 //My solution
-
 var bills = [48, 124, 268];
 
 function calculator(allTips) { 
@@ -502,7 +497,6 @@ console.log(new Array (calculator(bills[0]), calculator(bills[1]), calculator(bi
 console.log(new Array ((calculator(bills[0]) + bills[0]), (calculator(bills[1]) + bills[1]), (calculator(bills[2]) + bills[2])));
 
 //Jona's solution
-
 function tipCalculator(bill) {
     var percentage;
     if (bill < 50) {
