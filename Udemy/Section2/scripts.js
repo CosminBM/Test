@@ -498,9 +498,12 @@ function calculator(allTips) {
 
 }
 
-console.log(new Array ('All the three tips are: ' + calculator(bills[0]) + ', ' + calculator(bills[1]) + ', ' + calculator(bills[2])));
-console.log(new Array ('All the thee bills + tips are: ' + (calculator(bills[0]) + bills[0]) + ', ' + (calculator(bills[1]) + bills[1]) + ', ' + (calculator(bills[2]) + bills[2])));
-
+//1 index
+//console.log(new Array ('All the three tips are: ' + calculator(bills[0]) + ', ' + calculator(bills[1]) + ', ' + calculator(bills[2])));
+//console.log(new Array ('All the thee bills + tips are: ' + (calculator(bills[0]) + bills[0]) + ', ' + (calculator(bills[1]) + bills[1]) + ', ' + (calculator(bills[2]) + bills[2])));
+//3 indexes
+console.log(new Array (calculator(bills[0]), calculator(bills[1]), calculator(bills[2])));
+console.log(new Array ((calculator(bills[0]) + bills[0]), (calculator(bills[1]) + bills[1]), (calculator(bills[2]) + bills[2])));
 
 //Jona's solution
 
