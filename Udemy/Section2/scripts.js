@@ -484,7 +484,7 @@ GOOD LUCK 😀
 */
 
 //My solution
-/*
+
 var bills = [48, 124, 268];
 
 function calculator(allTips) { 
@@ -525,7 +525,7 @@ var finalValues = [bills[0] + tips[0],
                    bills[2] + tips[2]];
 
 console.log(tips, finalValues);
-*/
+
 
 
 
