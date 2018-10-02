@@ -495,12 +495,37 @@ function calculator(allTips) {
     } else {
         return allTips * 10/100;
     }
-    
+
 }
 
+console.log(new Array ('All the three tips are: ' + calculator(bills[0]) + ', ' + calculator(bills[1]) + ', ' + calculator(bills[2])));
+console.log(new Array ('All the thee bills + tips are: ' + (calculator(bills[0]) + bills[0]) + ', ' + (calculator(bills[1]) + bills[1]) + ', ' + (calculator(bills[2]) + bills[2])));
 
-var eachBill = calculator(bills.shift(0));
-console.log();
+
+//Jona's solution
+
+function tipCalculator(bill) {
+    var percentage;
+    if (bill < 50) {
+        percentage = .2;
+    } else if (bill >= 50 && bill < 200) {
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+
+var bills = [124, 48, 268];
+var tips = [tipCalculator(bills[0]),
+            tipCalculator(bills[1]),
+            tipCalculator(bills[2])];
+
+var finalValues = [bills[0] + tips[0],
+                   bills[1] + tips[1],
+                   bills[2] + tips[2]];
+
+console.log(tips, finalValues);
 
 
 

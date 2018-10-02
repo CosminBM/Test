@@ -1,4 +1,4 @@
-/https://eloquentjavascript.net/code#2
+//https://eloquentjavascript.net/code#2
 //
 //
 ////2.1 Looping a triangle - completed
