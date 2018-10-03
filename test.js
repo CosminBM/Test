@@ -68,14 +68,20 @@
 
 
 ////3.3 Bean counting
+var count = 0;
+
 function countBs(string) {
-    let count = 0;
-        for (count = 0; count <= string.length; count++) {
-            return ;
+    for (count = 0; count < string.length; count++) {
+        if (count == 'B') {
+            return count += 1;
+        } else {
+            return 'Not true!';
         }
+    }
+    
 }
 
-console.log(countBs("BBC"));
+console.log(countBs('BBC'));
 // → 2
 //console.log(countChar("kakkerlak", "k"));
 // → 4
@@ -87,7 +93,7 @@ console.log(countBs("BBC"));
 //function range () {
 //    let array = [];
 //    
-//    for (i = 1; i <= 10; i ++ ){
+//    for (i = 1; i <= 1'B'; i ++ ){
 //            array.push(i);       
 //        }  
 //    

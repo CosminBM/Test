@@ -521,6 +521,22 @@ var finalValues = [bills[0] + tips[0],
 console.log(tips, finalValues);
 
 
+/*****************************
+* Objects and properties
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
