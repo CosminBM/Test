@@ -68,15 +68,16 @@
 
 
 ////3.3 Bean counting
-var count = 0;
+var count;
 
 function countBs(string) {
     for (count = 0; count < string.length; count++) {
-        if (count == 'B') {
-            return count += 1;
-        } else {
-            return 'Not true!';
-        }
+        while(string.indexOf('B', 0) < count) {
+            return count++;
+            
+        }       
+        
+        
     }
     
 }
