@@ -76,7 +76,7 @@ function countBs(string) {
             return count ++;
         } else if (string.indexOf('B', 1) < count++) {
             return count++;
-        }
+        } 
     }  
 }
 
