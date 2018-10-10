@@ -69,16 +69,15 @@
 
 ////3.3 Bean counting
 var count;
-var index;
 
 function countBs(string) {
     for (count = 0; count < string.length; count++) {
-         while(string.indexOf('B', 0) < count) {
+         if (string.indexOf('B', 0) < count) {
+            return count ++;
+        } else if (string.indexOf('B', 1) < count++) {
             return count++;
-        }       
-        
-    }
-    
+        }
+    }  
 }
 
 console.log(countBs('BBC'));
