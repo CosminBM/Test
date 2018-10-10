@@ -73,10 +73,10 @@ var count;
 function countBs(string) {
     for (count = 0; count < string.length; count++) {
          if (string.indexOf('B', 0) < count) {
-            return count ++;
-        } else if (string.indexOf('B', 1) < count++) {
             return count++;
-        } 
+        } else if (string.indexOf('B', 1) <= count++) {
+            return count++;
+        }
     }  
 }
 
