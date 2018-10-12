@@ -68,23 +68,24 @@
 
 
 ////3.3 Bean counting
-var count;
-
-function countBs(string) {
-    for (count = 0; count < string.length; count++) {
-         if (string.indexOf('B', 0) < count) {
-            return count++;
-        } else if (string.indexOf('B', 1) <= count++) {
-            return count++;
-        }
-    }  
+function countChar(string, ch) {
+  let counted = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == ch) {
+      counted += 1;
+    }
+  }
+  return counted;
 }
 
-console.log(countBs('BBC'));
-// → 2
-//console.log(countChar("kakkerlak", "k"));
-// → 4
+function countBs(string) {
+  return countChar(string, "B");
+}
 
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
 
 //4.1The sum of a range.
 
