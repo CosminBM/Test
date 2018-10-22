@@ -603,8 +603,8 @@ console.log(John);
 var Mark = {
     firstName: 'Mark',
     lastName: 'Heisenberg',
-    mass: 80, // kg
-    height: 1.86,  // meters
+    mass: 82, // kg
+    height: 1.82,  // meters
     BMI: function(){
       this.MarkBMI = this.mass / (this.height * this.height); 
   } 
