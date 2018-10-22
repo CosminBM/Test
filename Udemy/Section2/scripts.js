@@ -588,38 +588,38 @@ GOOD LUCK 😀
 */
 //
 
-var John = {
+var john = {
   firstName: 'John',
   lastName: 'Smith',
   mass: 80, // kg
   height: 1.86,  // meters
-  BMI: function(){
-      this.JohnBMI = this.mass / (this.height * this.height);
+  bmi: function(){
+      this.bmiValue = this.mass / (this.height * this.height);
   }
 };
-John.BMI();
-console.log(John);
+john.bmi();
+console.log(john);
 
-var Mark = {
+var mark = {
     firstName: 'Mark',
     lastName: 'Heisenberg',
     mass: 82, // kg
     height: 1.82,  // meters
-    BMI: function(){
-      this.MarkBMI = this.mass / (this.height * this.height); 
+    bmi: function(){
+      this.bmiValue = this.mass / (this.height * this.height); 
   } 
 };
 
-Mark.BMI();
-console.log(Mark);
+mark.bmi();
+console.log(mark);
 
 
-if (Mark.MarkBMI > John.JohnBMI){
-    console.log(Mark.firstName +' '+ Mark.MarkBMI);
-} else if (Mark.MarkBMI < John.JohnBMI){
-    console.log(John.firstName +' '+ John.JohnBMI);
+if (mark.bmiValue > john.bmiValue){
+    console.log(mark.firstName +' '+ mark.bmiValue);
+} else if (mark.bmiValue  < John.JohnBMI){
+    console.log(john.firstName +' '+ john.bmiValue);
 } else {
-    console.log(John.firstName +' and '+ Mark.firstName +' BMI\'s with the value of '+(John.JohnBMI && Mark.MarkBMI)+' are equal');
+    console.log(john.firstName +' and '+ mark.firstName +' BMI\'s with the value of '+(mark.bmiValue && john.bmiValue)+' are equal');
 }
 
 
