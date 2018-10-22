@@ -619,7 +619,7 @@ if (Mark.MarkBMI > John.JohnBMI){
 } else if (Mark.MarkBMI < John.JohnBMI){
     console.log(John.firstName +' '+ John.JohnBMI);
 } else {
-    console.log(John.firstName +' and '+ Mark.firstName +' BMI\'s are equal');
+    console.log(John.firstName +' and '+ Mark.firstName +' BMI\'s with the value of '+John.JohnBMI+' are equal');
 }
 
 
