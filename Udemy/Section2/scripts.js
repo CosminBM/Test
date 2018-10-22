@@ -603,8 +603,8 @@ console.log(john);
 var mark = {
     firstName: 'Mark',
     lastName: 'Heisenberg',
-    mass: 80, // kg
-    height: 1.86,  // meters
+    mass: 82, // kg
+    height: 1.82,  // meters
     bmi: function(){
       this.bmiValue = this.mass / (this.height * this.height); 
   } 
@@ -619,7 +619,7 @@ if (mark.bmiValue > john.bmiValue){
 } else if (mark.bmiValue  < john.bmiValue){
     console.log(john.firstName +' '+ john.bmiValue);
 } else {
-    console.log(john.firstName +' and '+ mark.firstName +' BMI\'s with the value of '+(mark.bmiValue && john.bmiValue)+' are equal');
+    console.log(john.firstName +' and '+ mark.firstName +' BMI\'s with the value of '+(mark.bmiValue && john.bmiValue)+' are equal.');
 }
 
 
