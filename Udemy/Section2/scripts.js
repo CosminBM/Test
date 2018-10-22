@@ -132,8 +132,8 @@
 //var higher, BMI, John, Mark;
 //
 //massJohn = 80; // kg
-//massMark = 82; // meters
-//heightJohn = 1.86; //kg
+//massMark = 82; // kg
+//heightJohn = 1.86; // meters
 //heightMark = 1.82; // meters
 //
 //BMIJohn = massJohn / (heightJohn * heightJohn);
@@ -571,7 +571,7 @@
 //
 //john.calcAge();
 //console.log(john);
-//
+
 /*****************************
 * CODING CHALLENGE 4
 */
@@ -586,39 +586,41 @@ Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and heig
 
 GOOD LUCK 😀
 */
-
+//
 
 var John = {
   firstName: 'John',
   lastName: 'Smith',
-  mass: 78,
-  height: 1.82
-    
+  mass: 80, // kg
+  height: 1.86,  // meters
+  BMI: function(){
+      this.JohnBMI = this.mass / (this.height * this.height);
+  }
 };
-
+John.BMI();
+console.log(John);
 
 var Mark = {
     firstName: 'Mark',
     lastName: 'Heisenberg',
-    mass: 88,
-    height: 1.92 
+    mass: 82, // kg
+    height: 1.82,  // meters
+    BMI: function(){
+      this.MarkBMI = this.mass / (this.height * this.height); 
+  } 
 };
 
- 
-console.log(John);
+Mark.BMI();
+console.log(Mark);
 
 
-
-
-
-
-
-
-
-
-
-
-
+if (Mark.MarkBMI > John.JohnBMI){
+    console.log(Mark.firstName +' '+ Mark.MarkBMI);
+} else if (Mark.MarkBMI < John.JohnBMI){
+    console.log(John.firstName +' '+ John.JohnBMI);
+} else {
+    console.log(John.firstName +' and '+ Mark.firstName +' BMI\'s are equal');
+}
 
 
 
