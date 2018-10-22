@@ -613,13 +613,12 @@ var mark = {
 mark.bmi();
 console.log(mark);
 
-
 if (mark.bmiValue > john.bmiValue){
     console.log(mark.firstName+' '+ mark.lastName+' has '+ mark.bmiValue);
 } else if (mark.bmiValue  < john.bmiValue){
     console.log(john.firstName +' '+john.lastName +' has '+ john.bmiValue);
 } else {
-    console.log(john.firstName +' '+ john.lastName +' and '+ mark.firstName +' '+ mark.lastName +' BMI\'s are equal with a value of '+(mark.bmiValue && john.bmiValue)+'.');
+    console.log(john.firstName +' '+ john.lastName +' and '+ mark.firstName +' '+ mark.lastName +' BMI\'s are equal with a value of '+ mark.bmiValue+ '.');
 }
 
 
