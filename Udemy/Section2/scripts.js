@@ -588,38 +588,74 @@ GOOD LUCK 😀
 */
 //
 
-var john = {
-  firstName: 'John',
-  lastName: 'Smith',
-  mass: 80, // kg
-  height: 1.86,  // meters
-  bmi: function(){
-      this.bmiValue = this.mass / (this.height * this.height);
-  }
-};
-john.bmi();
-console.log(john);
+//var john = {
+//  firstName: 'John',
+//  lastName: 'Smith',
+//  mass: 80, // kg
+//  height: 1.86,  // meters
+//  bmi: function(){
+//      this.bmiValue = this.mass / (this.height * this.height);
+//      return this.bmiValue;
+//  }
+//};
+////john.bmi();
+//console.log(john);
+//
+//var mark = {
+//    firstName: 'Mark',
+//    lastName: 'Heisenberg',
+//    mass: 82, // kg
+//    height: 1.82,  // meters
+//    bmi: function(){
+//      this.bmiValue = this.mass / (this.height * this.height);
+//      return this.bmiValue;
+//  } 
+//};
+//
+////mark.bmi();
+//console.log(mark);
+//
+//if (mark.bmi() > john.bmi()){
+//    console.log(mark.firstName+' '+ mark.lastName+' has '+ mark.bmiValue);
+//} else if (mark.bmiValue  < john.bmiValue){
+//    console.log(john.firstName +' '+john.lastName +' has '+ john.bmiValue);
+//} else {
+//    console.log(john.firstName +' '+ john.lastName +' and '+ mark.firstName +' '+ mark.lastName +' BMI\'s are equal with a value of '+ mark.bmiValue + '.');
+//}
 
-var mark = {
-    firstName: 'Mark',
-    lastName: 'Heisenberg',
-    mass: 82, // kg
-    height: 1.82,  // meters
-    bmi: function(){
-      this.bmiValue = this.mass / (this.height * this.height); 
-  } 
-};
+/*****************************
+* Loops and iteration
+*/
 
-mark.bmi();
-console.log(mark);
+for (var i = 1; i <= 20; i += 2){
+    console.log(i);
+} 
 
-if (mark.bmiValue > john.bmiValue){
-    console.log(mark.firstName+' '+ mark.lastName+' has '+ mark.bmiValue);
-} else if (mark.bmiValue  < john.bmiValue){
-    console.log(john.firstName +' '+john.lastName +' has '+ john.bmiValue);
-} else {
-    console.log(john.firstName +' '+ john.lastName +' and '+ mark.firstName +' '+ mark.lastName +' BMI\'s are equal with a value of '+ mark.bmiValue + '.');
-}
+// i = 0, 0 < 10 true, log i to console, i ++
+// i = 1, 1 < 10 true, log i to console, i ++
+//...
+// i = 9, 9 < 10 true, log i to console, i ++
+// i = 10, 10 < 10 FALSE, exit the loop!
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
