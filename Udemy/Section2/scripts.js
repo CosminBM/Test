@@ -725,8 +725,7 @@ console.log(new Array (john.tipCalculator(john.bills[0]), john.tipCalculator(joh
 
 console.log(new Array (john.tipCalculator(john.bills[0]) + john.bills[0], john.tipCalculator(john.bills[1]) + john.bills[1], john.tipCalculator(john.bills[2]) + john.bills[2], john.tipCalculator(john.bills[3]) + john.bills[3], john.tipCalculator(john.bills[4]) + john.bills[4]));
 
-
-
+// Extra not done, yet :)
 
 var bills = [77, 375, 110, 45];
 
