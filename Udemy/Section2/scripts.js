@@ -725,11 +725,11 @@ console.log(new Array (john.tipCalculator(john.bills[0]), john.tipCalculator(joh
 
 console.log(new Array (john.tipCalculator(john.bills[0]) + john.bills[0], john.tipCalculator(john.bills[1]) + john.bills[1], john.tipCalculator(john.bills[2]) + john.bills[2], john.tipCalculator(john.bills[3]) + john.bills[3], john.tipCalculator(john.bills[4]) + john.bills[4]));
 
-// Extra not done, yet :)
+// Extra
 
-var bills = [77, 375, 110, 45];
+var billsMark = [77, 375, 110, 45];
 
-function tipCalculator(tip){
+function tipCalcMark(tip){
         let bills = tip;
         if (tip < 100) {
             return tip * 20/100; 
@@ -740,53 +740,23 @@ function tipCalculator(tip){
         }  
 }
 
-console.log(new Array (tipCalculator(bills[0]), tipCalculator(bills[1]), tipCalculator(bills[2]), tipCalculator(bills[3])));
+var sumArrayMark = billsMark[0] + billsMark[1] + billsMark[2] + billsMark[3];
+var sumArrayJohn = john.bills[0] + john.bills[1] + john.bills[2] + john.bills[3] + john.bills[4];
+var sumTipsMark = (tipCalcMark(billsMark[0]) + tipCalcMark(billsMark[1]) + tipCalcMark(billsMark[2]) + tipCalcMark(billsMark[3])) / 4;
+var sumTipsJohn = (john.tipCalculator(john.bills[0]) + john.tipCalculator(john.bills[1]) + john.tipCalculator(john.bills[2]) + john.tipCalculator(john.bills[3]) + john.tipCalculator(john.bills[4])) / 5;
 
-console.log(new Array (tipCalculator(bills[0]) + bills[0], tipCalculator(bills[1]) + bills[1], tipCalculator(bills[2]) + bills[2], tipCalculator(bills[3]) + bills[3]));
+console.log('The Mark\'s tips are ' + new Array (tipCalcMark(billsMark[0]), tipCalcMark(billsMark[1]), tipCalcMark(billsMark[2]), tipCalcMark(billsMark[3])));
+console.log('The average sum of the Mark\'s bills is ' + sumArrayMark / 4);
+console.log('The average sum of the John\'s bills is ' + sumArrayJohn / 5);
+console.log('The average sum of the Mark\'s tips is ' + sumTipsMark);
+console.log('The average sum of the John\'s tips is ' + sumTipsJohn);
 
+if (sumTipsMark > sumTipsJohn){
+    console.log('The higher tips paid was by Mark\s family with ' + sumTipsMark);
+} else {
+    console.log('The higher tips paid was by John\s family with ' + sumTipsJohn);
+}
 
-
-
-
-
-//var bills = [48, 124, 268];
-//
-//function calculator(allTips) { 
-//    if (allTips < 50) {
-//        return allTips * 20/100; 
-//    } else if (allTips >= 50 && allTips <= 200) {
-//        return allTips * 15/100;
-//    } else {
-//        return allTips * 10/100;
-//    }
-//
-//}
-//
-//console.log(new Array (calculator(bills[0]), calculator(bills[1]), calculator(bills[2])));
-//console.log(new Array ((calculator(bills[0]) + bills[0]), (calculator(bills[1]) + bills[1]), (calculator(bills[2]) + bills[2])));
-//
-////Jona's solution
-//function tipCalculator(bill) {
-//    var percentage;
-//    if (bill < 50) {
-//        percentage = .2;
-//    } else if (bill >= 50 && bill < 200) {
-//        percentage = .15;
-//    } else {
-//        percentage = .1;
-//    }
-//    return percentage * bill;
-//}
-//var bills = [124, 48, 268];
-//var tips = [tipCalculator(bills[0]),
-//            tipCalculator(bills[1]),
-//            tipCalculator(bills[2])];
-//
-//var finalValues = [bills[0] + tips[0],
-//                   bills[1] + tips[1],
-//                   bills[2] + tips[2]];
-//
-//console.log(tips, finalValues);
 
 
 
