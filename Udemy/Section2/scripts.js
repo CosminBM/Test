@@ -707,15 +707,87 @@ GOOD LUCK 😀
 
 
 var john = {
-        bills: [124, 48, 268, 180, 42],
-        tipCalculator:  
+    bills: [124, 48, 268, 180, 42],
+    tipCalculator: function (tip){
+        let bills = tip;
+        if (tip < 50) {
+            return tip * 20/100; 
+        } else if (tip >= 50 && tip <= 200) {
+            return tip * 15/100;
+        } else {
+            return tip * 10/100;        
+        }  
+    }
             
-                    
-};
-console.log(john);
+}
+
+console.log(new Array (john.tipCalculator(john.bills[0]), john.tipCalculator(john.bills[1]), john.tipCalculator(john.bills[2]), john.tipCalculator(john.bills[3]), john.tipCalculator(john.bills[4])));
+
+console.log(new Array (john.tipCalculator(john.bills[0]) + john.bills[0], john.tipCalculator(john.bills[1]) + john.bills[1], john.tipCalculator(john.bills[2]) + john.bills[2], john.tipCalculator(john.bills[3]) + john.bills[3], john.tipCalculator(john.bills[4]) + john.bills[4]));
 
 
 
+
+var bills = [77, 375, 110, 45];
+
+function tipCalculator(tip){
+        let bills = tip;
+        if (tip < 100) {
+            return tip * 20/100; 
+        } else if (tip >= 100 && tip <= 300) {
+            return tip * 10/100;
+        } else {
+            return tip * 25/100;        
+        }  
+}
+
+console.log(new Array (tipCalculator(bills[0]), tipCalculator(bills[1]), tipCalculator(bills[2]), tipCalculator(bills[3])));
+
+console.log(new Array (tipCalculator(bills[0]) + bills[0], tipCalculator(bills[1]) + bills[1], tipCalculator(bills[2]) + bills[2], tipCalculator(bills[3]) + bills[3]));
+
+
+
+
+
+
+//var bills = [48, 124, 268];
+//
+//function calculator(allTips) { 
+//    if (allTips < 50) {
+//        return allTips * 20/100; 
+//    } else if (allTips >= 50 && allTips <= 200) {
+//        return allTips * 15/100;
+//    } else {
+//        return allTips * 10/100;
+//    }
+//
+//}
+//
+//console.log(new Array (calculator(bills[0]), calculator(bills[1]), calculator(bills[2])));
+//console.log(new Array ((calculator(bills[0]) + bills[0]), (calculator(bills[1]) + bills[1]), (calculator(bills[2]) + bills[2])));
+//
+////Jona's solution
+//function tipCalculator(bill) {
+//    var percentage;
+//    if (bill < 50) {
+//        percentage = .2;
+//    } else if (bill >= 50 && bill < 200) {
+//        percentage = .15;
+//    } else {
+//        percentage = .1;
+//    }
+//    return percentage * bill;
+//}
+//var bills = [124, 48, 268];
+//var tips = [tipCalculator(bills[0]),
+//            tipCalculator(bills[1]),
+//            tipCalculator(bills[2])];
+//
+//var finalValues = [bills[0] + tips[0],
+//                   bills[1] + tips[1],
+//                   bills[2] + tips[2]];
+//
+//console.log(tips, finalValues);
 
 
 
