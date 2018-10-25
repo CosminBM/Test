@@ -748,8 +748,8 @@ var sumTipsJohn = (john.tipCalculator(john.bills[0]) + john.tipCalculator(john.b
 console.log('The Mark\'s tips are ' + new Array (tipCalcMark(billsMark[0]), tipCalcMark(billsMark[1]), tipCalcMark(billsMark[2]), tipCalcMark(billsMark[3])));
 console.log('The average sum of the Mark\'s bills is ' + sumArrayMark / 4);
 console.log('The average sum of the John\'s bills is ' + sumArrayJohn / 5);
-console.log('The average sum of the Mark\'s tips is ' + sumTipsMark);
-console.log('The average sum of the John\'s tips is ' + sumTipsJohn);
+console.log('The average sum of tips of Mark\'s family is ' + sumTipsMark);
+console.log('The average sum of tips of John\'s family is ' + sumTipsJohn);
 
 if (sumTipsMark > sumTipsJohn){
     console.log('The highest tips on average paid was by Mark\s family with ' + sumTipsMark);
