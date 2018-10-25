@@ -752,9 +752,9 @@ console.log('The average sum of the Mark\'s tips is ' + sumTipsMark);
 console.log('The average sum of the John\'s tips is ' + sumTipsJohn);
 
 if (sumTipsMark > sumTipsJohn){
-    console.log('The higher tips paid was by Mark\s family with ' + sumTipsMark);
+    console.log('The highest tips on average paid was by Mark\s family with ' + sumTipsMark);
 } else {
-    console.log('The higher tips paid was by John\s family with ' + sumTipsJohn);
+    console.log('The highest tips on average paid was by John\s family with ' + sumTipsJohn);
 }
 
 
