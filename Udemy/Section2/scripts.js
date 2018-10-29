@@ -706,88 +706,88 @@ GOOD LUCK 😀
 */
 
 //My solution
-
-var john = {
-    fullName: 'John Smith',
-    bills: [124, 48, 268, 180, 42],
-    tipCalculator: function (){
-        this.tips = [];
-        this.finalBill = [];
-        
-        for(var i = 0; i < this.bills.length; i++){
-        //Determine tips + bill
-            var percent;
-            var bill = this.bills[i];
-            
-            if (bill < 50) {
-                percent = 20/100; 
-            } else if (bill >= 50 && bill <= 200) {
-                percent = 15/100;
-            } else {
-                percent = 10/100;        
-            } 
-        // Result added to the array    
-        this.tips[i] = bill * percent;
-        this.finalBill[i] = bill + this.tips[i];
-            
-        }
-    
-    }       
-}
-
-john.tipCalculator();
-
-
-// Extra
-
-var mark = {
-    fullName: 'Mark Heisenberg',
-    bills: [77, 375, 110, 45],
-    tipCalculator: function (){
-        this.tips = [];
-        this.finalBill = [];
-        
-        for(var i = 0; i < this.bills.length; i++){
-        //Determine tips + bill
-            var percent;
-            var bill = this.bills[i];
-            
-            if (bill < 100) {
-                percent = 20/100; 
-            } else if (bill >= 100 && bill <= 300) {
-                percent = 10/100;
-            } else {
-                percent = 25/100;        
-            } 
-        // Result added to the array    
-        this.tips[i] = bill * percent;
-        this.finalBill[i] = bill + this.tips[i];
-            
-        }
-    
-    }  
-    
-}
-
-mark.tipCalculator();
-
-function average(tips){
-   var sum = 0;
-    for (var i = 0; i < tips.length; i++) {
-        sum = sum + tips[i];
-    }
-    return sum / tips.length;
-}
-
-john.average = average(john.tips);
-mark.average = average(mark.tips);
-console.log(john, mark);
-
-if (mark.average > john.average){
-        console.log(mark.fullName + ' average tips is ' + mark.average)
-    } else {
-        console.log(john.fullName + ' average tips is ' + john.average)
-    }
+//
+//var john = {
+//    fullName: 'John Smith',
+//    bills: [124, 48, 268, 180, 42],
+//    tipCalculator: function (){
+//        this.tips = [];
+//        this.finalBill = [];
+//        
+//        for(var i = 0; i < this.bills.length; i++){
+//        //Determine tips + bill
+//            var percent;
+//            var bill = this.bills[i];
+//            
+//            if (bill < 50) {
+//                percent = 20/100; 
+//            } else if (bill >= 50 && bill <= 200) {
+//                percent = 15/100;
+//            } else {
+//                percent = 10/100;        
+//            } 
+//        // Result added to the array    
+//        this.tips[i] = bill * percent;
+//        this.finalBill[i] = bill + this.tips[i];
+//            
+//        }
+//    
+//    }       
+//}
+//
+//john.tipCalculator();
+//
+//
+//// Extra
+//
+//var mark = {
+//    fullName: 'Mark Heisenberg',
+//    bills: [77, 375, 110, 45],
+//    tipCalculator: function (){
+//        this.tips = [];
+//        this.finalBill = [];
+//        
+//        for(var i = 0; i < this.bills.length; i++){
+//        //Determine tips + bill
+//            var percent;
+//            var bill = this.bills[i];
+//            
+//            if (bill < 100) {
+//                percent = 20/100; 
+//            } else if (bill >= 100 && bill <= 300) {
+//                percent = 10/100;
+//            } else {
+//                percent = 25/100;        
+//            } 
+//        // Result added to the array    
+//        this.tips[i] = bill * percent;
+//        this.finalBill[i] = bill + this.tips[i];
+//            
+//        }
+//    
+//    }  
+//    
+//}
+//
+//mark.tipCalculator();
+//
+//function average(tips){
+//   var sum = 0;
+//    for (var i = 0; i < tips.length; i++) {
+//        sum = sum + tips[i];
+//    }
+//    return sum / tips.length;
+//}
+//
+//john.average = average(john.tips);
+//mark.average = average(mark.tips);
+//console.log(john, mark);
+//
+//if (mark.average > john.average){
+//        console.log(mark.fullName + ' average tips is ' + mark.average)
+//    } else {
+//        console.log(john.fullName + ' average tips is ' + john.average)
+//    }
 
 
 //Jona's solution
