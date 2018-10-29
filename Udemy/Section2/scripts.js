@@ -709,7 +709,6 @@ GOOD LUCK 😀
 var john = {
     bills: [124, 48, 268, 180, 42],
     tipCalculator: function (tip){
-        let bills = tip;
         if (tip < 50) {
             return tip * 20/100; 
         } else if (tip >= 50 && tip <= 200) {
