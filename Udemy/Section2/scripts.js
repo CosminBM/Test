@@ -707,56 +707,86 @@ GOOD LUCK 😀
 
 
 var john = {
+    fullName: 'John Smith',
     bills: [124, 48, 268, 180, 42],
-    tipCalculator: function (tip){
-        if (tip < 50) {
-            return tip * 20/100; 
-        } else if (tip >= 50 && tip <= 200) {
-            return tip * 15/100;
-        } else {
-            return tip * 10/100;        
-        }  
-    }
+    tipCalculator: function (){
+        this.tips = [];
+        this.finalBill = [];
+        
+        for(var i = 0; i < this.bills.length; i++){
+        //Determine tips + bill
+            var percent;
+            var bill = this.bills[i];
             
+            if (bill < 50) {
+                percent = 20/100; 
+            } else if (bill >= 50 && bill <= 200) {
+                percent = 15/100;
+            } else {
+                percent = 10/100;        
+            } 
+        // Result added to the array    
+        this.tips[i] = bill * percent;
+        this.finalBill[i] = bill + this.tips[i];
+            
+        }
+    
+    }       
 }
 
-console.log(new Array (john.tipCalculator(john.bills[0]), john.tipCalculator(john.bills[1]), john.tipCalculator(john.bills[2]), john.tipCalculator(john.bills[3]), john.tipCalculator(john.bills[4])));
+john.tipCalculator();
 
-console.log(new Array (john.tipCalculator(john.bills[0]) + john.bills[0], john.tipCalculator(john.bills[1]) + john.bills[1], john.tipCalculator(john.bills[2]) + john.bills[2], john.tipCalculator(john.bills[3]) + john.bills[3], john.tipCalculator(john.bills[4]) + john.bills[4]));
 
 // Extra
 
-var billsMark = [77, 375, 110, 45];
-
-function tipCalcMark(tip){
-        if (tip < 100) {
-            return tip * 20/100; 
-        } else if (tip >= 100 && tip <= 300) {
-            return tip * 10/100;
-        } else {
-            return tip * 25/100;        
-        }  
+var mark = {
+    fullName: 'Mark Heisenberg',
+    bills: [77, 375, 110, 45],
+    tipCalculator: function (){
+        this.tips = [];
+        this.finalBill = [];
+        
+        for(var i = 0; i < this.bills.length; i++){
+        //Determine tips + bill
+            var percent;
+            var bill = this.bills[i];
+            
+            if (bill < 100) {
+                percent = 20/100; 
+            } else if (bill >= 100 && bill <= 300) {
+                percent = 10/100;
+            } else {
+                percent = 25/100;        
+            } 
+        // Result added to the array    
+        this.tips[i] = bill * percent;
+        this.finalBill[i] = bill + this.tips[i];
+            
+        }
+    
+    }  
+    
 }
 
-var sumArrayMark = billsMark[0] + billsMark[1] + billsMark[2] + billsMark[3];
-var sumArrayJohn = john.bills[0] + john.bills[1] + john.bills[2] + john.bills[3] + john.bills[4];
-var sumTipsMark = (tipCalcMark(billsMark[0]) + tipCalcMark(billsMark[1]) + tipCalcMark(billsMark[2]) + tipCalcMark(billsMark[3])) / 4;
-var sumTipsJohn = (john.tipCalculator(john.bills[0]) + john.tipCalculator(john.bills[1]) + john.tipCalculator(john.bills[2]) + john.tipCalculator(john.bills[3]) + john.tipCalculator(john.bills[4])) / 5;
+mark.tipCalculator();
 
-console.log('The Mark\'s tips are ' + new Array (tipCalcMark(billsMark[0]), tipCalcMark(billsMark[1]), tipCalcMark(billsMark[2]), tipCalcMark(billsMark[3])));
-console.log('The average sum of the Mark\'s bills is ' + sumArrayMark / 4);
-console.log('The average sum of the John\'s bills is ' + sumArrayJohn / 5);
-console.log('The average sum of tips of Mark\'s family is ' + sumTipsMark);
-console.log('The average sum of tips of John\'s family is ' + sumTipsJohn);
-
-if (sumTipsMark > sumTipsJohn){
-    console.log('The highest tips on average paid was by Mark\s family with ' + sumTipsMark);
-} else {
-    console.log('The highest tips on average paid was by John\s family with ' + sumTipsJohn);
+function average(tips){
+   var sum = 0;
+    for (var i = 0; i < tips.length; i++) {
+        sum = sum + tips[i];
+    }
+    return sum / tips.length;
 }
 
+john.average = average(john.tips);
+mark.average = average(mark.tips);
+console.log(john, mark);
 
-
+if (mark.average > john.average){
+        console.log(mark.fullName + ' average tips is ' + mark.average)
+    } else {
+        console.log(john.fullName + ' average tips is ' + john.average)
+    }
 
 
 
