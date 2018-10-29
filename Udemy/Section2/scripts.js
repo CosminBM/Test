@@ -730,7 +730,6 @@ console.log(new Array (john.tipCalculator(john.bills[0]) + john.bills[0], john.t
 var billsMark = [77, 375, 110, 45];
 
 function tipCalcMark(tip){
-        let bills = tip;
         if (tip < 100) {
             return tip * 20/100; 
         } else if (tip >= 100 && tip <= 300) {
