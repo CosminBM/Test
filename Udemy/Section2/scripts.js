@@ -21,7 +21,7 @@ console.log(job);
 //Variable naming rules
 var _4years = 5;
 var hahaHH = 'And So';
-var if = 23;
+//var if = 23;
 
 
 /*******************
@@ -651,7 +651,7 @@ while(i < john.length) {
 }
 
 
-continue and break statements
+//continue and break statements
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
 for (var i = 0; i < john.length; i++){
     if (typeof john[i] !== 'string') continue;
@@ -664,8 +664,8 @@ for (var i = 0; i < john.length; i++){
     console.log(john[i]);
 }
 
- Looping backwards
-My solution
+//Looping backwards
+//My solution
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
 for (var i = john.length; i >= 0; i--){ //starts from index 6
     console.log(john[i]);   
@@ -705,7 +705,7 @@ Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the 
 GOOD LUCK 😀
 */
 
-My solution
+//My solution
 
 var john = {
     fullName: 'John Smith',
