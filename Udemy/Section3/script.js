@@ -11,13 +11,14 @@ function calculateAge(year) {
 
 
 
+//function expression
+
 //retirement(1956);
 
-//function expression
 var retirement = function(year) {
     console.log(65 - (2016 - year));
 }
-
+ 
 //Variables hoisting
 
 console.log(age);
@@ -112,7 +113,7 @@ john.calcAge();
 
 
 var mike = {
-    name: 'JMike',
+    name: 'Mike',
     yearOfBirth: 1984
         
 };
