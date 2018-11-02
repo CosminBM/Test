@@ -65,13 +65,13 @@ body {
 .player-score {
     text-align: center;
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 300;
     color: #EB4D4D;
     margin-bottom: 130px;
     
 }
 
-.active { background-color: #cccccc; } /* default #f7f7f7 */
+.active { background-color: #e6e6e6; } /* default #f7f7f7 */
 .active .player-name { font-weight: 300; }
 
 .active .player-name::after {
@@ -96,13 +96,12 @@ body {
 .player-current-label {
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
     color: #222;
 }
 
 .player-current-score {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 35px;
 }
 
 button {
