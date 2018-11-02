@@ -59,18 +59,12 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
     
     //Check if player won the game
-    for (let i = 0; i <= 10; i++) {
-        if (i == '#score-0') {
-            document.getElementById('#score-0').textContent = alert('#name-0' + activePlayer + ' has won the Game!');
+        if (scores[activePlayer] >= 5) {
+            document.getElementById('#score-').textContent =  alert(document.querySelector('#name-' + activePlayer).textContent + ' has won the Game!')
         } else {
-            document.getElementById('#score-1').textContent = alert('#name-1' + activePlayer + ' has won the Game!');
-        }
-    }
-    
-    
-    //Next player
-    nextPlayer();
-    
+            //Next player
+            nextPlayer();
+        }   
     
 })
 
