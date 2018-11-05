@@ -73,7 +73,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
     
     //Check if player won the game
-        if (scores[activePlayer] >= 100) {
+        if (scores[activePlayer] >= 20) {
 //          document.getElementById('#score-').textContent =  alert(document.querySelector('#name-' + activePlayer).textContent + ' has won the Game!')
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
@@ -105,13 +105,29 @@ function nextPlayer() {
         document.getElementById('current-1').textContent = '0';
         document.querySelector('.player-0-panel').classList.toggle('active');
         document.querySelector('.player-1-panel').classList.toggle('active');
-        
         document.querySelector('.dice');//.style.display = 'none';
         document.querySelector('.dice2');//.style.display = 'none';
         
        
 }
 
+
+//Set the winning score
+document.querySelector('.btn-add').addEventListener('click', function() {
+    
+    var x = document.querySelector('.panel').style.visibility = 'block';
+        
+    if ( x == 'block') {
+        document.setElementsByName('input').value='';
+        document.querySelector('.panel').style.display = 'none';
+        alert('Winning score was set! ');
+        }
+    else {
+        document.querySelector('.panel').style.display = 'block';
+    
+        }    
+ 
+});
 
 document.querySelector('.btn-new').addEventListener('click', init);
 
@@ -139,6 +155,8 @@ function init() {
 
 
 
+//text box langa buton, visibility hiden pt text box, click pe buton, sa faca text boxu visible
+
 /*
 YOUR 3 CHALLENGES
 Change the game to follow these rules:
@@ -147,20 +165,3 @@ Change the game to follow these rules:
 2. Add an input field to the HTML where players can set the winning score, so that they can change the predefined score of 100. (Hint: you can read that value with the .value property in JavaScript. This is a good oportunity to use google to figure this out :)
 3. Add another dice to the game, so that there are two dices now. The player looses his current score when one of them is a 1. (Hint: you will need CSS to position the second dice, so take a look at the CSS code for the first one.)
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

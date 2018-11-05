@@ -138,7 +138,7 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 45px;}
+.btn-new { top: 60px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 .btn-add {top: 5px;}
@@ -164,28 +164,24 @@ i {
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
 
-/*
 .panel {
     position: absolute;
-    width: 200px;
-    left: 50%;
-    transform: translateX(-3%);
-    color: #555;
-    background: blue;
-    border: none;
+    width: 5.5%;
+    left: 48%;
+    transform: translateX(-5%);
+    background: none;
     font-family: Lato;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 100;
     transition: background-color 0.3s, color 0.3s;
-    
-}
-*/
-
-.submit{
-    
-    
+    top: 30px;
+    visibility: visible;
 }
 
+input {
+    background-color: #EB4D4D;
+    color: #fff;
+}
 
