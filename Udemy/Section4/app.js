@@ -19,15 +19,16 @@ document.querySelector('.btn-roll').addEventListener('click', function btn(){
     
         //1. Random number.
         var dice, dice2 = Math.floor(Math.random() * 6) + 1;
-        
+
         //2. Display the result.
-        var diceDOM = document.querySelectorAll('.dice', '.dice2');
+        var diceDOM = document.querySelector('.dice');
+        var diceDOM2 = document.querySelector('.dice2');
         
         diceDOM.style.display = 'block';
         diceDOM.src = ('dice-' + dice + '.png');
-        diceDOM.src = ('dice-' + dice2 + '.png');
+        diceDOM2.src = ('dice-' + dice2 + '.png');
        
-        previousRoll = dice, dice2;
+        previousRoll = dice;
         
         //3. Update the round score IF the rolled number was NOT 1.
         if (previousRoll == 6) {   
@@ -74,7 +75,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 //          document.getElementById('#score-').textContent =  alert(document.querySelector('#name-' + activePlayer).textContent + ' has won the Game!')
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
-            document.querySelector('.dice2').style.display = 'none';
+            
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             gamePlaying = false;
@@ -104,7 +105,7 @@ function nextPlayer() {
         document.querySelector('.player-1-panel').classList.toggle('active');
         
         document.querySelector('.dice');//.style.display = 'none';
-        document.querySelector('.dice2');
+        
        
 }
 
