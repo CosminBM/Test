@@ -29,20 +29,22 @@ document.querySelector('.btn-roll').addEventListener('click', function btn(){
         previousRoll = dice;
         
         //3. Update the round score IF the rolled number was NOT 1.
-        if (dice !== 1) {
+        if (previousRoll == 6) {   
+        // 6 in a row  
+    
+        document.querySelector('#score-' + activePlayer).textContent = 0;
+        document.querySelector('#current-' + activePlayer).textContent = 0;
+        nextPlayer();
+ 
+        } 
+        
+        else if (dice !== 1) {
         //Add score
         roundScore += dice; 
         document.querySelector('#current-' + activePlayer).textContent = roundScore; 
             
         } 
-        else if (previousRoll == 6) {   
-        // 6 in a row  
-        activePlayer = scores[0]; 
-        document.querySelector('#score-' + activePlayer).textContent = '0';
-        nextPlayer();
             
-        }      
-        
         else {
             
         //Next player
