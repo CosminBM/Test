@@ -21,13 +21,11 @@ document.querySelector('.btn-roll').addEventListener('click', function btn(){
         var dice, dice2 = Math.floor(Math.random() * 6) + 1;
         
         //2. Display the result.
-        var diceDOM = document.querySelector('.dice');
-        var diceDOM2 = document.querySelector('.dice2');
+        var diceDOM = document.querySelectorAll('.dice', '.dice2');
         
         diceDOM.style.display = 'block';
-        diceDOM2.style.display = 'block';
         diceDOM.src = ('dice-' + dice + '.png');
-        diceDOM2.src = ('dice-' + dice2 + '.png');
+        diceDOM.src = ('dice-' + dice2 + '.png');
        
         previousRoll = dice, dice2;
         
