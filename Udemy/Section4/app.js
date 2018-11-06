@@ -119,7 +119,7 @@ document.querySelector('.btn-add').addEventListener('click', function() {
    var x = document.querySelector('.panel').style.display = 'block'; 
    var y = document.querySelector('input').value;
    
-    if (y == 0 || y == '' || y == 'enter') {
+    if (y == 0 || y == '') {
         document.querySelector('.btn-add').disabled = true;
         document.querySelector('.btn-hold').disabled = true;
         document.querySelector('.btn-roll').disabled = true;
