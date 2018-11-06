@@ -118,21 +118,24 @@ document.querySelector('.btn-add').addEventListener('click', function() {
     
     var x = document.querySelector('.panel').style.display = 'block';
         
-    if ( x == 'block') {
+    if ( x == 'block' && '') {
         addScore = document.querySelector('input').value;
         document.querySelector('.panel').style.display = 'none';
         document.querySelector('.btn-add').disabled = true;
         document.querySelector('.btn-hold').disabled = false;
         document.querySelector('.btn-roll').disabled = false;
-       
+        
+        alert('Winning score was set to '  + addScore);
+        console.log('Winning score was set to ' + addScore);
+        
         }
     else {
         document.querySelector('.panel').style.display = 'block';
     
         } 
     
-    alert('Winning score was set to '  + addScore);
-    console.log('Winning score was set to ' + addScore);
+    
+    
 });
 
 document.querySelector('.btn-new').addEventListener('click', init);
