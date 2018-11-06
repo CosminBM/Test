@@ -9,7 +9,7 @@ GAME RULES:
 
 */
 
-var scores, roundScore, activePlayer, gamePlaying, previousRoll;
+var scores, roundScore, activePlayer, gamePlaying, previousRoll, addScore;
 
 init();
 
@@ -74,7 +74,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
     
     //Check if player won the game
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= addScore) {
 //          document.getElementById('#score-').textContent =  alert(document.querySelector('#name-' + activePlayer).textContent + ' has won the Game!')
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
@@ -119,9 +119,8 @@ document.querySelector('.btn-add').addEventListener('click', function() {
     var x = document.querySelector('.panel').style.display = 'block';
         
     if ( x == 'block') {
-        document.getElementsByName('input').value = '';
+        addScore = document.querySelector('input').value;
         document.querySelector('.panel').style.display = 'none';
-        alert('Winning score was set to ');
         document.querySelector('.btn-add').disabled = true;
         document.querySelector('.btn-hold').disabled = false;
         document.querySelector('.btn-roll').disabled = false;
@@ -130,8 +129,10 @@ document.querySelector('.btn-add').addEventListener('click', function() {
     else {
         document.querySelector('.panel').style.display = 'block';
     
-        }  
-
+        } 
+    
+    alert('Winning score was set to '  + addScore);
+    console.log('Winning score was set to ' + addScore);
 });
 
 document.querySelector('.btn-new').addEventListener('click', init);
@@ -166,7 +167,6 @@ function init() {
 
 
 
-//text box langa buton, visibility hiden pt text box, click pe buton, sa faca text boxu visible
 
 /*
 YOUR 3 CHALLENGES
