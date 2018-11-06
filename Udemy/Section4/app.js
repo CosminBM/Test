@@ -118,11 +118,22 @@ document.querySelector('.btn-add').addEventListener('click', function() {
     
    var x = document.querySelector('.panel').style.display = 'block'; 
    var y = document.querySelector('input').value;
-   
+//   var z = document.getElementsByName('input').addEventListener('keypress', function keypress(event) {
+//       var keyName = event.which || event.keyCode;
+//        if (keyName == 13 || keyName == 32) {
+//            return false;
+//        } else {
+//            return true;
+//        }
+//       alert('Pressed');
+//             
+//   });
+//    
     if (y == 0 || y == '') {
         document.querySelector('.btn-add').disabled = true;
         document.querySelector('.btn-hold').disabled = true;
         document.querySelector('.btn-roll').disabled = true;
+//        console.log('Enter pressed ' + z);
         
         } else if (x == 'block') {
         
@@ -133,17 +144,13 @@ document.querySelector('.btn-add').addEventListener('click', function() {
         document.querySelector('.btn-roll').disabled = false;
         alert('Winning score was set to '  + addScore);
         console.log('Winning score was set to ' + addScore);
-            
+//        console.log('Enter pressed ' + z);   
         } 
     else {
         document.querySelector('.panel').style.display = 'block';
     
-        } 
-    
+        }  
 
-        
-    
-    
 });
 
 document.querySelector('.btn-new').addEventListener('click', init);
@@ -173,7 +180,6 @@ function init() {
     document.querySelector('.btn-hold').disabled = true;
     document.querySelector('.btn-roll').disabled = true;
 
-  
 }
 
 
