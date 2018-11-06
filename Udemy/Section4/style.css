@@ -166,22 +166,24 @@ i {
 
 .panel {
     position: absolute;
-    width: 5.5%;
-    left: 48%;
-    transform: translateX(-5%);
-    background: none;
+    width: 13.9%;
+    left: 55%;
+    transform: translateX(-50%);
+/*    background: blue;*/
     font-family: Lato;
-    font-size: 20px;
+/*    font-size: 15px;*/
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 100;
     transition: background-color 0.3s, color 0.3s;
-    top: 30px;
+    top: 35px;
     visibility: visible;
 }
 
 input {
     background-color: #EB4D4D;
     color: #fff;
+    width: 50%;
+    text-align: center;
 }
 
