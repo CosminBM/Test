@@ -167,7 +167,6 @@ function init() {
 
 
 
-
 /*
 YOUR 3 CHALLENGES
 Change the game to follow these rules:
