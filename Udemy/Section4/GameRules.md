@@ -9,9 +9,9 @@ In each turn, a player can roll the dices as many times as he whishes.
    - If the player rolls a "1", all his CURRENT score gets lost.
    - If the player rolls a double "6", all the scores are lost from "CURRENT" and "PLAYER".
 
-ADD SCORE
+ADD SCORE 
    
-   - It has a panel from where you can set the desired WINNING SCORE.
+   - Click on the "ADD SCORE" button once you set the desired WINNING SCORE.
 
 NEW GAME
     
