@@ -31,6 +31,7 @@ document.querySelector('.btn-roll').addEventListener('click', function btn(){
         diceDOM2.src = ('dice-' + dice2 + '.png');
        
         previousRoll = (dice + dice2);
+         
         
         //3. Update the round score IF the rolled number was NOT 1.
         if (previousRoll == 12) {   
@@ -85,7 +86,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
             //Next player
             nextPlayer();
         } 
-    }  
+    } 
     
 });
 
@@ -121,15 +122,20 @@ document.querySelector('.btn-add').addEventListener('click', function() {
         document.getElementsByName('input').value = '';
         document.querySelector('.panel').style.display = 'none';
         alert('Winning score was set to ');
+        document.querySelector('.btn-add').disabled = true;
+        document.querySelector('.btn-hold').disabled = false;
+        document.querySelector('.btn-roll').disabled = false;
+       
         }
     else {
         document.querySelector('.panel').style.display = 'block';
     
-        }    
+        }  
 
 });
 
 document.querySelector('.btn-new').addEventListener('click', init);
+
 
 function init() {
     scores = [0, 0];
@@ -150,7 +156,12 @@ function init() {
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
-    
+    document.querySelector('.panel').style.display = 'block';
+    document.querySelector('.btn-add').disabled = false;
+    document.querySelector('.btn-hold').disabled = true;
+    document.querySelector('.btn-roll').disabled = true;
+
+  
 }
 
 
