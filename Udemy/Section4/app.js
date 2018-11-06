@@ -115,18 +115,18 @@ function nextPlayer() {
 //Set the winning score
 document.querySelector('.btn-add').addEventListener('click', function() {
     
-    var x = document.querySelector('.panel').style.visibility = 'block';
+    var x = document.querySelector('.panel').style.display = 'block';
         
     if ( x == 'block') {
-        document.setElementsByName('input').value='';
+        document.getElementsByName('input').value = '';
         document.querySelector('.panel').style.display = 'none';
-        alert('Winning score was set! ');
+        alert('Winning score was set to ');
         }
     else {
         document.querySelector('.panel').style.display = 'block';
     
         }    
- 
+
 });
 
 document.querySelector('.btn-new').addEventListener('click', init);
