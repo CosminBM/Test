@@ -118,21 +118,16 @@ document.querySelector('.btn-add').addEventListener('click', function() {
     
    var x = document.querySelector('.panel').style.display = 'block'; 
    var y = document.querySelector('input').value;
-//   var z = document.getElementsByName('input').addEventListener('keypress', function keypress(event) {
-//       var keyName = event.which || event.keyCode;
-//        if (keyName == 13 || keyName == 32) {
-//            return false;
-//        } else {
-//            return true;
-//        }
-//       alert('Pressed');
-//             
-//   });
-//    
-    if (y == 0 || y == '') {
+     
+    var deci = y % 1 != 0;
+    var negative = y < 0;
+        
+    if (y == 0 || y == '' || negative || deci || y > 999) {
         document.querySelector('.btn-add').disabled = true;
         document.querySelector('.btn-hold').disabled = true;
         document.querySelector('.btn-roll').disabled = true;
+        alert('Values must be between 1 and 999!');
+        init();
 //        console.log('Enter pressed ' + z);
         
         } else if (x == 'block') {
@@ -152,6 +147,15 @@ document.querySelector('.btn-add').addEventListener('click', function() {
         }  
 
 });
+
+
+ var z = document.querySelector('input').addEventListener('keydown', function keydown(event) {
+       if (event.key == 13){
+           console.log('Variable z works!'); 
+      } 
+
+});
+
 
 document.querySelector('.btn-new').addEventListener('click', init);
 
@@ -179,6 +183,7 @@ function init() {
     document.querySelector('.btn-add').disabled = false;
     document.querySelector('.btn-hold').disabled = true;
     document.querySelector('.btn-roll').disabled = true;
+    
 
 }
 
