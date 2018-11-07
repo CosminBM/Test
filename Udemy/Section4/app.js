@@ -149,12 +149,12 @@ document.querySelector('.btn-add').addEventListener('click', function() {
 });
 
 
- var z = document.querySelector('input').addEventListener('click', function keydown(event) {
-       if (event.key == 13){
-           console.log('Variable z works!'); 
-      } 
-     return event;
-});
+// var z = document.querySelector('input').addEventListener('click', function keydown(event) {
+//       if (event.key == 13){
+//           console.log('Variable z works!'); 
+//      } 
+//     return event;
+//});
 
 
 document.querySelector('.btn-new').addEventListener('click', init);
