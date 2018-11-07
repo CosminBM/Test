@@ -149,7 +149,7 @@ document.querySelector('.btn-add').addEventListener('click', function() {
 });
 
 
- var z = document.querySelector('input').addEventListener('keydown', function keydown(event) {
+ var z = document.querySelector('input').addEventListener('click', function keydown(event) {
        if (event.key == 13){
            console.log('Variable z works!'); 
       } 
