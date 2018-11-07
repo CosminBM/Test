@@ -153,7 +153,7 @@ document.querySelector('.btn-add').addEventListener('click', function() {
        if (event.key == 13){
            console.log('Variable z works!'); 
       } 
-
+     return event;
 });
 
 
