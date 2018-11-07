@@ -139,7 +139,7 @@ document.querySelector('.btn-add').addEventListener('click', function() {
         init();
 
         
-        } else if (x == 'block' || z) {
+        } else if (x == 'block' ||) {
         
         addScore = document.querySelector('input').value;
         document.querySelector('.panel').style.display = 'none';
