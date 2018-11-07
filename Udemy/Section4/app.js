@@ -118,11 +118,17 @@ document.querySelector('.btn-add').addEventListener('click', function() {
     
    var x = document.querySelector('.panel').style.display = 'block'; 
    var y = document.querySelector('input').value;
+   var z = document.querySelector('input').addEventListener('keydown', function keyDown(event) {
+       if (event.key == 13){
+           console.log('Variable z works!'); 
+      } 
+     return event;
+});
      
     var deci = y % 1 != 0;
     var negative = y < 0;
         
-    if (y == 0 || y == '' || negative || deci || y > 999) {
+    if (y == 0 || y == '' || negative || deci || y > 999 || z) {
         document.querySelector('.btn-add').disabled = true;
         document.querySelector('.btn-hold').disabled = true;
         document.querySelector('.btn-roll').disabled = true;
@@ -149,12 +155,7 @@ document.querySelector('.btn-add').addEventListener('click', function() {
 });
 
 
-// var z = document.querySelector('input').addEventListener('click', function keydown(event) {
-//       if (event.key == 13){
-//           console.log('Variable z works!'); 
-//      } 
-//     return event;
-//});
+
 
 
 document.querySelector('.btn-new').addEventListener('click', init);
