@@ -112,21 +112,37 @@ function nextPlayer() {
        
 }
 
-
+//Check focus in the input
+//document.querySelector('input').addEventListener('keydown', window.onload = function(event){
+//         
+//        var f = document.querySelector('.panel').focus();    
+//    
+//        if (f == f) {
+//            console.log('Focus ON');
+//            
+//        var z = document.querySelector('input').addEventListener('keydown', function keyDown(event) { 
+//                    if (event.key == 13){
+//                        document.querySelector('.btn-add').focus();
+//                        document.querySelector('.btn-add');
+//                        
+//                    } else {
+//                        console.log('The key pressed is', event.key); 
+//                    }
+//                    return event; 
+//            });
+//        } else {
+//    
+//            console.log('Focus OFF');
+//        }
+//              
+//}); 
+    
+           
 //Set the winning score
 document.querySelector('.btn-add').addEventListener('click', function() {
     
    var x = document.querySelector('.panel').style.display = 'block'; 
-   var y = document.querySelector('input').value;  
-   
-//      var z = document.querySelector('input').addEventListener('keydown', function keyDown(event) { 
-//    if (event.key == 13){
-//         document.querySelector('.btn-add');
-//      } else {
-//          console.log('The key pressed is', event.key); 
-//      }
-//     return event; 
-//}); 
+   var y = document.querySelector('input').value;                              
     
    var deci = y % 1 != 0;
    var negative = y < 0;
@@ -184,7 +200,6 @@ function init() {
     document.querySelector('.btn-hold').disabled = true;
     document.querySelector('.btn-roll').disabled = true;
     
-   
 
 }
 
