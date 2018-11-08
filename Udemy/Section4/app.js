@@ -19,7 +19,7 @@ document.querySelector('.btn-roll').addEventListener('click', function btn(){
     
         //1. Random number.
         var dice = Math.floor(Math.random() * 6) + 1;
-        var dice2 = Math.floor(Math.random() * 6) + 1;
+        var dice2 = dice;
         
         //2. Display the result.
         var diceDOM = document.querySelector('.dice');
@@ -112,6 +112,7 @@ function nextPlayer() {
        
 }
 
+
 //Check focus in the input
 //document.querySelector('input').addEventListener('keydown', window.onload = function(event){
 //         
@@ -122,8 +123,7 @@ function nextPlayer() {
 //            
 //        var z = document.querySelector('input').addEventListener('keydown', function keyDown(event) { 
 //                    if (event.key == 13){
-//                        document.querySelector('.btn-add').focus();
-//                        document.querySelector('.btn-add');
+//                        document.querySelector('.btn-add').ckick();
 //                        
 //                    } else {
 //                        console.log('The key pressed is', event.key); 
