@@ -34,34 +34,34 @@ console.log(mark.lastName);
 
 
 // Practice Constructor & Objects
-
-var Props = function(color, seats, year) {
-    this.color = color;
-    this.seats = seats;
-    this.year = year;
-     
-}
-
-Props.prototype.modelToyota = 'Century';
-Props.prototype.modelHonda = 'CR-V';
-Props.prototype.modelBmw = 'Fx16 X6';
-Props.prototype.yearOfFabrication = function() {
-        console.log(2018 - this.year);
-};
-
-var toyota = new Props('red', 4, 2005);
-var honda = new Props('blue', 5, 2007);
-var bmw = new Props('green', 3, 2009);
-
-toyota.yearOfFabrication();
-honda.yearOfFabrication();
-bmw.yearOfFabrication();
-
-console.log(toyota.modelToyota);
-console.log(honda.seats);
-console.log(bmw.modelBmw);
-console.log(bmw.color);
-console.log(toyota.year);
+//
+//var Props = function(color, seats, year) {
+//    this.color = color;
+//    this.seats = seats;
+//    this.year = year;
+//     
+//}
+//
+//Props.prototype.modelToyota = 'Century';
+//Props.prototype.modelHonda = 'CR-V';
+//Props.prototype.modelBmw = 'Fx16 X6';
+//Props.prototype.yearOfFabrication = function() {
+//        console.log(2018 - this.year);
+//};
+//
+//var toyota = new Props('red', 4, 2005);
+//var honda = new Props('blue', 5, 2007);
+//var bmw = new Props('green', 3, 2009);
+//
+//toyota.yearOfFabrication();
+//honda.yearOfFabrication();
+//bmw.yearOfFabrication();
+//
+//console.log(toyota.modelToyota);
+//console.log(honda.seats);
+//console.log(bmw.modelBmw);
+//console.log(bmw.color);
+//console.log(toyota.year);
 
 
 
