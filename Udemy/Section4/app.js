@@ -19,7 +19,7 @@ document.querySelector('.btn-roll').addEventListener('click', function btn(){
     
         //1. Random number.
         var dice = Math.floor(Math.random() * 6) + 1;
-        var dice2 = dice;
+        var dice2 = Math.floor(Math.random() * 6) + 1;;
         
         //2. Display the result.
         var diceDOM = document.querySelector('.dice');
