@@ -114,28 +114,28 @@ function nextPlayer() {
 
 
 //Check focus in the input
-//document.querySelector('input').addEventListener('keydown', window.onload = function(event){
-//         
-//        var f = document.querySelector('.panel').focus();    
-//    
-//        if (f == f) {
-//            console.log('Focus ON');
-//            
-//        var z = document.querySelector('input').addEventListener('keydown', function keyDown(event) { 
-//                    if (event.key == 13){
-//                        document.querySelector('.btn-add').ckick();
-//                        
-//                    } else {
-//                        console.log('The key pressed is', event.key); 
-//                    }
-//                    return event; 
-//            });
-//        } else {
-//    
-//            console.log('Focus OFF');
-//        }
-//              
-//}); 
+document.querySelector('input').addEventListener('click', window.onload = function(event){
+         
+        var f = document.querySelector('.panel').focus();    
+    
+        if (f == f) {
+            console.log('Focus ON');
+            
+        var z = document.querySelector('input').addEventListener('keyup', function keyUp(event) { 
+                    if (event.key == 13){
+                        document.querySelector('.btn-add').click();
+                        
+                    } else {
+                        console.log('The key pressed is', event.key); 
+                    }
+                    return event; 
+            });
+        } else {
+    
+            console.log('Focus OFF');
+        }
+              
+}); 
     
            
 //Set the winning score
