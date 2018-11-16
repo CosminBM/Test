@@ -148,7 +148,7 @@ document.querySelector('input').addEventListener('keydown', function(event) {
         } 
         return false;
     }
-})
+});
 
           
 //Set the winning score
