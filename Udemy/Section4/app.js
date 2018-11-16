@@ -114,30 +114,43 @@ function nextPlayer() {
 
 
 //Check focus in the input
-document.querySelector('input').addEventListener('click', window.onload = function(event){
-         
-        var f = document.querySelector('.panel').focus();    
+document.querySelector('input').addEventListener('keydown', function(event) {
     
-        if (f == f) {
-            console.log('Focus ON');
-            
-        var z = document.querySelector('input').addEventListener('keyup', function keyUp(event) { 
-                    if (event.key == 13){
-                        document.querySelector('.btn-add').click();
-                        
-                    } else {
-                        console.log('The key pressed is', event.key); 
-                    }
-                    return event; 
-            });
+    if(event.key == 'Enter') {
+        event.preventDefault();
+        var x = document.querySelector('.panel').style.display = 'block'; 
+        var y = document.querySelector('input').value;                              
+    
+        var deci = y % 1 != 0;
+        var negative = y < 0;
+        
+        if (y == 0 || y == '' || negative || deci || y > 999) {
+        document.querySelector('.btn-add').disabled = true;
+        document.querySelector('.btn-hold').disabled = true;
+        document.querySelector('.btn-roll').disabled = true;
+        alert('Values must be between 1 and 999!');
+        init();
+
+        
+        } else if (x == 'block') {
+        
+        addScore = document.querySelector('input').value;
+        document.querySelector('.panel').style.display = 'none';
+        document.querySelector('.btn-add').disabled = true;
+        document.querySelector('.btn-hold').disabled = false;
+        document.querySelector('.btn-roll').disabled = false;
+        alert('Winning score was set to '  + addScore);
+        console.log('Winning score was set to ' + addScore);
+   
         } else {
+        document.querySelector('.panel').style.display = 'block';
     
-            console.log('Focus OFF');
-        }
-              
-}); 
-    
-           
+        } 
+        return false;
+    }
+})
+
+          
 //Set the winning score
 document.querySelector('.btn-add').addEventListener('click', function() {
     
