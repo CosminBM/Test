@@ -1,5 +1,5 @@
 ///////////////////////////
- //Lecture: Function constructor
+// //Lecture: Function constructor
 //
 ////Function constructor
 //
@@ -93,42 +93,42 @@
 //});
 //
 //
+////Primitives vs Objects
 //
-// Primitives vs Objects
-
-//Primitives
-var a = 23;
-var b = a;
-console.log(a);
-console.log(b);
-
-// Objects
-var obj1 = {
-    name: 'John',
-    age: 26
-};
-var obj2 = obj1;
-obj1.age = 30;
-console.log(obj1.age);
-console.log(obj2.age);
-
-//Functions
-var age = 27;
-var obj = {
-    name: 'Jonas',
-    city: 'Lisbon'
-};
-
-function change (a, b) {
-    a = 30;
-    b.city = 'San Francisco';
-}
-
-change(age, obj);
-
-console.log(age);
-console.log(obj.city);
-
+////Primitives
+//var a = 23;
+//var b = a;
+//a = 46;
+//console.log(a);
+//console.log(b);
+//
+//// Objects
+//var obj1 = {
+//    name: 'John',
+//    age: 26
+//};
+//var obj2 = obj1;
+//obj1.age = 30;
+//console.log(obj1.age);
+//console.log(obj2.age);
+//
+////Functions
+//var age = 27;
+//var obj = {
+//    name: 'Jonas',
+//    city: 'Lisbon'
+//};
+//
+//function change (a, b) {
+//    a = 30;
+//    b.city = 'San Francisco';
+//}
+//
+//change(age, obj);
+//
+//console.log(age);
+//console.log(obj.city);
+//
 /////////////////////////////
 // //Lecture: Passing functions as arguments
 //
@@ -191,6 +191,7 @@ console.log(obj.city);
 //    }
 //}
 //
+//
 //var teacherQuestion =  interviewQuestion('teacher');
 //var designerQuestion = interviewQuestion('designer');
 //
@@ -238,53 +239,53 @@ console.log(obj.city);
 //    console.log(score >= 5); 
 //})();
 //
-//
-//console.log(score);
+////console.log(score);
 //
 //(function (goodLuck) {
 //    var score = Math.random() * 10;
 //    console.log(score >= 5 - goodLuck); 
 //})(5);
 //
-///////////////////////////
-////Lecture: Closures
-//
-//
-//function retirement(retirementAge) {
-//    var a = ' years left until retirement.';
-//    return function(yearOfBirth) {
-//        var age = 2016 - yearOfBirth;
-//        console.log((retirementAge - age) + a);
-//    }
-//}
-//
-//var retirementUS = retirement(66);
-////retirement(66)(1990);
-//var retirementGermany = retirement(65);
-//var retirementIceland = retirement(67);
-//
-//retirementGermany(1990);
-//retirementUS(1990);
-//retirementIceland(1990);
-//
-//
-//
-//function interviewQuestion(job) {
-//    return function(name) {
-//        if ( job === 'designer') {
-//            console.log(name + ', can you please explain what UX design is?');
-//        } else if ( job === 'teacher') {
-//            console.log('What subject do you teach, ' + name +'?');
-//        } else {
-//            console.log('Hello ' + name + ', what do you do?');
-//        } 
-//    }   
-//}
-//
-//interviewQuestion('designer')('John');
-//interviewQuestion('teacher')('Mark');
-//interviewQuestion('')('Jonas');
-//
+/////////////////////////
+//Lecture: Closures
+
+
+function retirement(retirementAge) {
+    var a = ' years left until retirement.';
+    return function(yearOfBirth) {
+        var age = 2016 - yearOfBirth;
+        console.log((retirementAge - age) + a);
+    }
+}
+
+
+var retirementUS = retirement(66);
+//retirement(66)(1990);
+var retirementGermany = retirement(65);
+var retirementIceland = retirement(67);
+
+retirementGermany(1990);
+retirementUS(1990);
+retirementIceland(1990);
+
+
+
+function interviewQuestion(job) {
+    return function(name) {
+        if ( job === 'designer') {
+            console.log(name + ', can you please explain what UX design is?');
+        } else if ( job === 'teacher') {
+            console.log('What subject do you teach, ' + name +'?');
+        } else {
+            console.log('Hello ' + name + ', what do you do?');
+        } 
+    }   
+}
+
+interviewQuestion('designer')('John');
+interviewQuestion('teacher')('Mark');
+interviewQuestion('')('Jonas');
+
 ///////////////////////////
 ////Lecture: Bind, call and apply
 //
