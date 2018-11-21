@@ -350,6 +350,9 @@ console.log(ages);
 console.log(fullJapan);
 
 
+var fullRomania = arrayCalc(ages, isFullAge.bind(this, 18));
+console.log(ages);
+console.log(fullRomania);
 
 
 
