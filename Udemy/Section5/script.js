@@ -1,6 +1,6 @@
 /////////////////////////
 //Lecture: Function constructor
-
+/*
 //Function constructor
 
 var john = {
@@ -355,7 +355,7 @@ console.log(fullRomania);
 
 /////////////////////////////
 // CODING CHALLENGE
-
+*/
 
 /*
 --- Let's build a fun quiz game in the console! ---
@@ -390,8 +390,63 @@ c) correct answer (I would use a number for this)
 
 
 
+function Question (question, answer, correct) {
+        this.questionItself = question;
+        this.response = answer;
+        this.correctAnswer = correct;
+
+}
 
 
+function questions (q) {
+    var ask = Math.floor(Math.random() * q);
+    var storeAsk = [];
+    for (q = 0; q.length <= 10; q++){
+        storeAsk.push(ask);
+        console.log(ask);
+    }
+    
+    
+}
 
 
+function answers (a) {
+    
+    if (a === 'javascript') {
+        console.log(' '); 
+    } else if (a === 'name') {
+         console.log(' ');
+    } else if (a === 'year') {
+         console.log(' ');
+    } else {
+        console.log('Continue the game');
+    }
+    
+}
 
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
