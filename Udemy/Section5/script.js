@@ -1,6 +1,6 @@
 /////////////////////////
 //Lecture: Function constructor
-/*
+
 //Function constructor
 
 var john = {
@@ -352,10 +352,9 @@ console.log(fullJapan);
 var fullRomania = arrayCalc(ages, isFullAge.bind(this, 18));
 console.log(fullRomania);
 
-
 /////////////////////////////
 // CODING CHALLENGE
-*/
+
 
 /*
 --- Let's build a fun quiz game in the console! ---
@@ -389,59 +388,42 @@ c) correct answer (I would use a number for this)
 */
 
 
-
-function Question (question, answer, correct) {
-        this.questionItself = question;
-        this.response = answer;
-        this.correctAnswer = correct;
-
+function Question (question, answer, correct) {   
+            this.question = question;
+            this.answer = answer;
+            this.correct = correct;
 }
 
 
-function questions (q) {
-    var ask = Math.floor(Math.random() * q);
-    var storeAsk = [];
-    for (q = 0; q.length <= 10; q++){
-        storeAsk.push(ask);
-        console.log(ask);
-    }
-    
-    
-}
-
-
-function answers (a) {
-    
-    if (a === 'javascript') {
-        console.log(' '); 
-    } else if (a === 'name') {
-         console.log(' ');
-    } else if (a === 'year') {
-         console.log(' ');
+function questions (opt) {
+    if (opt === 'javascript') {
+        console.log('Is JavaScript the coolest programming language in the world?');
+    } else if (opt === 'name') {
+        console.log('What is the instructor\'s name?');
+    } else if (opt === 'year') {
+        console.log('Is 2018 the Jona\'s favourite year?');   
+    } else if (opt === 'day') {
+        console.log('Is Sunday, Jona\'s favourite day?');      
     } else {
-        console.log('Continue the game');
+        console.log('Do you like playing this quiz?');       
     }
+ 
+}
+
+function answer (a) {
+    var arr = [];
+    
+    
+    
     
 }
 
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+function correct (a) {
+    
+}         
+ 
+questions('javascript');
+                           
         
         
         
