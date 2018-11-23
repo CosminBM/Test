@@ -395,7 +395,7 @@ function Question (question, answer, correct) {
 }
 
 
-function questions (opt) {
+function questions(opt) {
     if (opt === 'javascript') {
         console.log('Is JavaScript the coolest programming language in the world?');
     } else if (opt === 'name') {
@@ -410,18 +410,7 @@ function questions (opt) {
  
 }
 
-function answer (a) {
-    var arr = [];
-    
-    
-    
-    
-}
-
-function correct (a) {
-    
-}         
- 
+questions('day');
 questions('javascript');
                            
         
