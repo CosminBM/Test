@@ -395,15 +395,6 @@ function Question (question, answer, correct) {
 }
 
 
-Question.answers = function(answer) {
-        var a = ['Yes', 'No'];
-        var b = ['Adrian', 'Jonas', 'Silvestre'];
-
-}
-
-Question.answers();
-
-
 Question.questions = function (question) { 
 
         if (question === 'javascript') {
@@ -421,8 +412,15 @@ Question.questions = function (question) {
         }   
 }
 
+Question.answers = function (answer) {
+    var a = ['Yes', 'No'];
+    var b = ['Adrian', 'Jonas', 'Silvestre'];
+    for (var i = 0; i < i.length; i++){
+        console.log(a);
+    }  
+}
 
-Question.questions('javascript'); 
+Question.answers();
+Question.questions('javascript');
+
 var user = prompt('Please select the correct answer. (Type a number)');
-
-
