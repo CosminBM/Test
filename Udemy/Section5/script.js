@@ -1,6 +1,6 @@
 /////////////////////////
 //Lecture: Function constructor
-
+/*
 //Function constructor
 
 var john = {
@@ -354,7 +354,7 @@ console.log(fullRomania);
 
 /////////////////////////////
 // CODING CHALLENGE
-
+*/
 
 /*
 --- Let's build a fun quiz game in the console! ---
@@ -392,27 +392,24 @@ function Question (question, answer, correct) {
             this.question = question;
             this.answer = answer;
             this.correct = correct;
+            this.questions = function (question) {
+                  if (question === 'javascript') {
+                        console.log('Is JavaScript the coolest programming language in the world?');
+                  } else if (question === 'name') {
+                        console.log('What is the instructor\'s name?');
+                  } else if (question === 'year') {
+                        console.log('Is 2018 the Jona\'s favourite year?');
+                  } else if (question === 'day') {
+                        console.log('Is Sunday, your favourite day?');   
+                  } else {
+                        console.log('Do you like this quiz game?')
+                  }
+            }
 }
 
 
-function questions(opt) {
-    if (opt === 'javascript') {
-        console.log('Is JavaScript the coolest programming language in the world?');
-    } else if (opt === 'name') {
-        console.log('What is the instructor\'s name?');
-    } else if (opt === 'year') {
-        console.log('Is 2018 the Jona\'s favourite year?');   
-    } else if (opt === 'day') {
-        console.log('Is Sunday, Jona\'s favourite day?');      
-    } else {
-        console.log('Do you like playing this quiz?');       
-    }
- 
-}
 
-questions('day');
-questions('javascript');
-                           
+
         
         
         
