@@ -417,7 +417,9 @@ Question.answers = function (answer) {
     var b = ['Adrian', 'Jonas', 'Silvestre'];
     for (var i = 0; i < i.length; i++){
         console.log(a);
-    }  
+    }
+    
+    
 }
 
 Question.answers();
