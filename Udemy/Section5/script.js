@@ -415,6 +415,8 @@ var questionGame = {
     question: 'Do you like this quiz game?' 
 };
 
+
+
 Question.questions = function (question) { 
 
         if (question === 'javascript') {
@@ -445,7 +447,7 @@ Question.answers = function (answer) {
 
 Question.questions('javascript');
 
-var user = prompt('Please select the correct answer. (Type a number)');
+var user = prompt('Please select the correct answer.  (Type a number)');
 
 
 
