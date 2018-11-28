@@ -395,34 +395,69 @@ function Question (question, answer, correct) {
 }
 
 
+var questionJavascript = {
+    question: 'Is JavaScript the coolest programming language in the world?' 
+};
+
+var questionName = {
+    question: 'What is the instructor\'s name?' 
+};
+
+var questionYear = {
+    question: 'Is 2018 the Jona\'s favourite year?' 
+};
+
+var questionDay = {
+    question: 'Is Sunday, your favourite day?' 
+};
+
+var questionGame = {
+    question: 'Do you like this quiz game?' 
+};
+
 Question.questions = function (question) { 
 
         if (question === 'javascript') {
-            console.log('Is JavaScript the coolest programming language in the world?');
+            console.log(questionJavascript.question);
         } else if (question === 'name') {
-            console.log('What is the instructor\'s name?');
+            console.log(questionName.question);
         } else if (question === 'year') {
-            console.log('Is 2018 the Jona\'s favourite year?');
+            console.log(questionYear.question);
         } else if (question === 'day') {
-            console.log('Is Sunday, your favourite day?'); 
+            console.log(questionDay.question); 
         } else if (question === 'game') {
-            console.log('Do you like this quiz game?');
+            console.log(questionJavascript.question);
         } else {
             console.log('Incorrect question!');
         }   
 }
 
+
 Question.answers = function (answer) {
-    var a = ['Yes', 'No'];
-    var b = ['Adrian', 'Jonas', 'Silvestre'];
+    var i = [];
     for (var i = 0; i < i.length; i++){
-        console.log(a);
+        console.log(i);
     }
-    
+    return i;
     
 }
 
-Question.answers();
+
 Question.questions('javascript');
 
 var user = prompt('Please select the correct answer. (Type a number)');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
