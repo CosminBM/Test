@@ -395,59 +395,66 @@ function Question (question, answer, correct) {
 }
 
 
-var questionJavascript = {
-    question: 'Is JavaScript the coolest programming language in the world?' 
-};
-
-var questionName = {
-    question: 'What is the instructor\'s name?' 
-};
-
-var questionYear = {
-    question: 'Is 2018 the Jona\'s favourite year?' 
-};
-
-var questionDay = {
-    question: 'Is Sunday, your favourite day?' 
-};
-
-var questionGame = {
-    question: 'Do you like this quiz game?' 
+var questions = {
+    questionJavascript: 'Is JavaScript the coolest programming language in the world?',
+    questionName: 'What is the instructor\'s name?',
+    questionYear: 'Is 2018 the Jona\'s favourite year?',
+    questionDay: 'Is Sunday, your favourite day?',
+    questionGame: 'Do you like this quiz game?'
 };
 
 
+Question.prototype.questions = function (question) { 
 
-Question.questions = function (question) { 
-
-        if (question === 'javascript') {
-            console.log(questionJavascript.question);
-        } else if (question === 'name') {
-            console.log(questionName.question);
-        } else if (question === 'year') {
-            console.log(questionYear.question);
-        } else if (question === 'day') {
-            console.log(questionDay.question); 
-        } else if (question === 'game') {
-            console.log(questionJavascript.question);
+    
+    var storeQuestions = [];
+      for (var i = 0; i < question.length; i++) {
+        if (question.questionJavascript === 'javascript') {
+            console.log(questions.questionJavascript);
+        } else if (question.questionName === 'name') {
+            console.log(questions.questionName);
+        } else if (question.questionYear === 'year') {
+            console.log(questions.questionYear);
+        } else if (question.questionDay === 'day') {
+            console.log(questions.questionDay); 
+        } else if (question.questionGame === 'game') {
+            console.log(questions.questionGame);
         } else {
             console.log('Incorrect question!');
-        }   
-}
-
-
-Question.answers = function (answer) {
-    var i = [];
-    for (var i = 0; i < i.length; i++){
-        console.log(i);
-    }
-    return i;
+        } 
     
+          storeQuestions.push(question[i]);
+      }  
+    
+    return storeQuestions * Math.random();
+    
+    
+   
 }
 
 
-Question.questions('javascript');
+//Question.prototype.answers = function (answer) {
+//    var i = [];
+//    for (i = 0; i < answer.length; i++) {
+//           
+//        if (questions == answer) {
+//            console.log('Yes');
+//            console.log('No');
+//        } else {
+//            console.log('Not a question');
+//        }
+//    }
+//   
+//    
+//}
 
-var user = prompt('Please select the correct answer.  (Type a number)');
+
+
+
+
+
+
+//var user = prompt('Please select the correct answer.  (Type a number)');
 
 
 
