@@ -387,8 +387,9 @@ c) correct answer (I would use a number for this)
 11. Display the score in the console. Use yet another method for this.
 */
 
+(function () {
 
-function Question (question, answer, correct) {   
+ function Question (question, answer, correct) {   
             this.question = question;
             this.answer = answer;
             this.correct = correct;
@@ -431,7 +432,7 @@ var answers = parseInt(prompt('Please select the correct answer.'));
 
 questions[n].checkAnswers(answers);
 
-
+}) ();
 
 
 
