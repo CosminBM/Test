@@ -395,66 +395,41 @@ function Question (question, answer, correct) {
 }
 
 
-var questions = {
-    questionJavascript: 'Is JavaScript the coolest programming language in the world?',
-    questionName: 'What is the instructor\'s name?',
-    questionYear: 'Is 2018 the Jona\'s favourite year?',
-    questionDay: 'Is Sunday, your favourite day?',
-    questionGame: 'Do you like this quiz game?'
-};
+var javascript  = new Question ('Is JavaScript the coolest programming language in the world?', ['Yes', 'No'], 0);
+var name = new Question ('What is the instructor\'s name?', ['Adrian', 'Jonas', 'Rudy'], 1);
+var year = new Question ('Is 2018 the Jona\'s favourite year?', ['Yes', 'No'], 0);
+var day = new Question ('Is Sunday, your favourite day?', ['Yes', 'No'], 0);
+var game = new Question ('Do you like this quiz game?', ['Yes', 'No'], 0);
 
 
-Question.prototype.questions = function (question) { 
 
-    
-    var storeQuestions = [];
-      for (var i = 0; i < question.length; i++) {
-        if (question.questionJavascript === 'javascript') {
-            console.log(questions.questionJavascript);
-        } else if (question.questionName === 'name') {
-            console.log(questions.questionName);
-        } else if (question.questionYear === 'year') {
-            console.log(questions.questionYear);
-        } else if (question.questionDay === 'day') {
-            console.log(questions.questionDay); 
-        } else if (question.questionGame === 'game') {
-            console.log(questions.questionGame);
+Question.prototype.displayQuestions = function() {
+        console.log(this.question);
+
+        for (var i = 0; i < this.answer.length; i++) {
+            console.log(i + ': ' + this.answer[i]);
+        }
+    }
+
+Question.prototype.checkAnswers = function(ans) {
+        if (ans === this.correct) {
+            console.log('Correct answer!');
+
         } else {
-            console.log('Incorrect question!');
-        } 
-    
-          storeQuestions.push(question[i]);
-      }  
-    
-    return storeQuestions * Math.random();
-    
-    
-   
-}
+            console.log('Wrong answer. Try again!')
+        }
+    }
 
 
-//Question.prototype.answers = function (answer) {
-//    var i = [];
-//    for (i = 0; i < answer.length; i++) {
-//           
-//        if (questions == answer) {
-//            console.log('Yes');
-//            console.log('No');
-//        } else {
-//            console.log('Not a question');
-//        }
-//    }
-//   
-//    
-//}
+var questions = [javascript, name, year, day, game];
 
+var n = Math.floor(Math.random() * questions.length);
 
+questions[n].displayQuestions();
 
+var answers = parseInt(prompt('Please select the correct answer.'));
 
-
-
-
-//var user = prompt('Please select the correct answer.  (Type a number)');
+questions[n].checkAnswers(answers);
 
 
 
