@@ -314,7 +314,7 @@ john.presentation('formal', 'morning');
 john.presentation.call(emily, 'friendly', 'afternoon');
 
 //john.presentation.apply(emily, ['friendly', 'afternoon']);
-//Caryying
+//Currying
 var johnFriendly = john.presentation.bind(john, 'friendly');
 
 johnFriendly('morning');
@@ -431,9 +431,22 @@ questions[n].displayQuestions();
 var answers = parseInt(prompt('Please select the correct answer.'));
 
 questions[n].checkAnswers(answers);
+    
+    
+//function gameNeverEnds () {
+//    if (Question.prototype.checkAnswers == true ) {
+//        return questions[n].displayQuestions();
+//    } else {
+//        
+//    }  
+//    
+//}
+//
+//gameNeverEnds();  
+    
+    
 
 }) ();
-
 
 
 
