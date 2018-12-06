@@ -389,7 +389,7 @@ c) correct answer (I would use a number for this)
 
 (function () {
 
-    
+  
 function Question (question, answer, correct) {   
             this.question = question;
             this.answer = answer;
@@ -410,6 +410,7 @@ Question.prototype.displayQuestions = function() {
 
         for (var i = 0; i < this.answer.length; i++) {
             console.log(i + ': ' + this.answer[i]);
+        
         }
     }
 
@@ -432,63 +433,40 @@ questions[n].displayQuestions();
 var answers = parseInt(prompt('Please select the correct answer.'));
 
 questions[n].checkAnswers(answers);
- 
 
-}) ();
-
-
-
-//--- Expert level ---
-
-
-(function () {
+gameNeverEnds();
+    
+    
+function gameNeverEnds () {
+    var questions = [javascript, name, year, day, game];
+    var n = Math.floor(Math.random() * questions.length);
+    questions[n].displayQuestions();
+    var answers = parseInt(prompt('Please select the correct answer.'));
+    questions[n].checkAnswers(answers);
+    console.log('Entered gameNeverEnds');
+    
+    if ( prompt() == 'exit') {
+        console.log('Ended');
+        return;
+    } else {
+        console.log('Continue');
+        answers;
+        questions[n].displayQuestions();
+        questions[n].checkAnswers(answers);
+        gameNeverEnds();
+    }
+        
+    
+}    
 
     
-function Question (question, answer, correct) {   
-            this.question = question;
-            this.answer = answer;
-            this.correct = correct;
-}
-
-
-var javascript  = new Question ('Is JavaScript the coolest programming language in the world?', ['Yes', 'No'], 0);
-var name = new Question ('What is the instructor\'s name?', ['Adrian', 'Jonas', 'Rudy'], 1);
-var year = new Question ('Is 2018 the Jona\'s favourite year?', ['Yes', 'No'], 0);
-var day = new Question ('Is Sunday, your favourite day?', ['Yes', 'No'], 0);
-var game = new Question ('Do you like this quiz game?', ['Yes', 'No'], 0);
-
-
-
-Question.prototype.displayQuestions = function() {
-        console.log(this.question);
-
-        for (var i = 0; i < this.answer.length; i++) {
-            console.log(i + ': ' + this.answer[i]);
-        }
-    }
-
-Question.prototype.checkAnswers = function(ans) {
-        if (ans === this.correct) {
-            console.log('Correct answer!');
-
-        } else {
-            console.log('Wrong answer. Try again!')
-        }
-    }
-
-
-var questions = [javascript, name, year, day, game];
-
-var n = Math.floor(Math.random() * questions.length);
-
-questions[n].displayQuestions();
-
-var answers = parseInt(prompt('Please select the correct answer.'));
-
-questions[n].checkAnswers(answers);
- 
 
 }) ();
+
+
+
+       
+
 
 
 
