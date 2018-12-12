@@ -91,9 +91,9 @@
 
 ////In progress
 //function range () {
-//    let array = [];
+//    var array = [];
 //    
-//    for (i = 1; i <= 1'B'; i ++ ){
+//    for (i = 1; i <= array.length; i ++ ){
 //            array.push(i);       
 //        }  
 //    
